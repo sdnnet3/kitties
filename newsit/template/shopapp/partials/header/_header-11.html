@@ -1,0 +1,358 @@
+<header class="header-main @@HeaderClass header-option-11">
+    <!-- Header Top -->
+    @@include('./header-top/_header-marqueeone.html', {
+        "path": "..",
+        "imgPath": "../../assets",
+        "HeaderTopClass": "small",
+        "ContainerTopClass": "container",
+    })
+    <!-- End Header Top -->
+    <!-- Header Middle -->
+    <div class="header-middle d-none d-lg-flex">
+        <div class="@@ContainerClass">
+            <div class="row align-items-center">
+                <div class="col-md-4 hm-left-col">
+                    <ul class="nav hm-nav-left  d-none d-lg-flex">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#"><span>Women</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><span>Men</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><span>About</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 hm-logo col">
+                    <div class="logo text-center w-100 d-flex justify-content-center">
+                        <a href="../../index.html">
+                            <img class="logo-dark" src="@@imgPath/img/logo-v2.svg" title="" alt="">
+                            <img class="logo-light" src="@@imgPath/img/logo-v2-light.svg" title="" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 hm-right-col">
+                    <div class="nav header-right">
+                        <!-- Nav Search-->
+                        <div class="nav-item d-none d-lg-block">
+                            <a class="nav-link" data-bs-toggle="offcanvas" href="#header_search_popup" role="button"
+                                aria-controls="header_search_popup">
+                                <i class="fi-search"> </i>
+                            </a>
+                        </div>
+                        <!-- Acount -->
+                        <div class="nav-item dropdown">
+                            <a class="nav-link" href="#" role="button" id="dropdown_myaccount" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <i class="fi-user"> </i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end mt-2 shadow"
+                                aria-labelledby="dropdown_myaccount">
+                                <a class="dropdown-item" href="#">Login</a>
+                                <a class="dropdown-item" href="#">Register</a>
+                                <a class="dropdown-item" href="#">Wishlist</a>
+                                <a class="dropdown-item" href="#">My account</a>
+                            </div>
+                        </div>
+                        <!-- Wishlist -->
+                        <div class="nav-item d-none d-xl-block">
+                            <a class="nav-link" href="#">
+                                <i class="fi-heart"> </i>
+                                <sub>08</sub>
+                            </a>
+                        </div>
+                        <!-- Cart -->
+                        <div class="nav-item">
+                            <a class="nav-link" data-bs-toggle="offcanvas" href="#modalMiniCart" role="button"
+                                aria-controls="modalMiniCart">
+                                <i class="fi-shopping-cart"> </i>
+                                <sub>08</sub>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Header Middle -->
+    <!-- Desktop Menu -->
+    <nav class="navbar shadow-none d-none d-lg-flex">
+        <div class="@@ContainerClass">
+            <!-- Menu -->
+            <div class="navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="dropdown dropdown-full nav-item">
+                        <a href="#" class="nav-link">Demos</a>
+                        <div class="dropdown-menu dropdown-mega-menu py-0">
+                            @@include('header/_home_demo_menu.html', {
+                            "path": "..",
+                            })
+                        </div>
+                    </li>
+                    <li class="dropdown dropdown-full nav-item">
+                        <a href="#" class="nav-link">New Arrivals</a>
+                        <div class="dropdown-menu dropdown-mega-menu py-6">
+                            <div class="container">
+                                <div class="row g-3 g-xl-5">
+                                    <div class="col-md-3">
+                                        <h6 class="sm-title-03 mb-4">Shop By Catagory</h6>
+                                        <ul class="list-unstyled link-list-style-01">
+                                            <li>
+                                                <a href="#">Swimwear</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Underwear</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Activewear</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Bodysuits</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Shop All Basics & Swim</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="position-relative hover-scale">
+                                            <div class="hover-scale-in">
+                                                <a href="#">
+                                                    <img src="@@imgPath/img/swimwear/swimwear-mega-menu-1.jpg" title=""
+                                                        alt="">
+                                                </a>
+                                                <h5
+                                                    class="position-absolute start-0 bottom-0 p-3 text-white fw-600 m-0">
+                                                    Mix & Match Swim <i class="bi-arrow-right"></i></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="hover-scale">
+                                            <div class="hover-scale-in">
+                                                <a href="#">
+                                                    <img src="@@imgPath/img/swimwear/swimwear-mega-menu-2.jpg" title=""
+                                                        alt="">
+                                                </a>
+                                            </div>
+                                            <h6 class="small pt-2 m-0"><a href="#"
+                                                    class="small text-reset link-effect">The Short-Sleeve Crew Neck
+                                                    Bodysuit</a></h6>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="hover-scale">
+                                            <div class="hover-scale-in">
+                                                <a href="#">
+                                                    <img src="@@imgPath/img/swimwear/swimwear-mega-menu-3.jpg" title=""
+                                                        alt="">
+                                                </a>
+                                            </div>
+                                            <h6 class="small pt-2 m-0"><a href="#"
+                                                    class="small text-reset link-effect">The Short-Sleeve Crew Neck
+                                                    Bodysuit</a></h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown dropdown-full nav-item">
+                        <a href="#" class="nav-link">Best Sellers</a>
+                        <div class="dropdown-menu dropdown-mega-menu py-6">
+                            <div class="container">
+                                <div class="row g-3 g-xl-5">
+                                    <div class="col-md-3">
+                                        <h6 class="sm-title-03 mb-4">Highlights</h6>
+                                        <ul class="list-unstyled link-list-style-01">
+                                            <li>
+                                                <a href="#">Back in Stock</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Gift Cards</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Shop All Featured</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h6 class="sm-title-03 mb-4">Trending</h6>
+                                        <ul class="list-unstyled link-list-style-01">
+                                            <li>
+                                                <a href="#">The Vacation Edit</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Modern Essentials</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">The Everyone Collection</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">The Track Collection</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Shop All Collection</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="hover-scale">
+                                            <div class="hover-scale-in">
+                                                <a href="#">
+                                                    <img src="@@imgPath/img/swimwear/swimwear-mega-menu-3.jpg" title=""
+                                                        alt="">
+                                                </a>
+                                            </div>
+                                            <h6 class="small pt-2 m-0"><a href="#"
+                                                    class="small text-reset link-effect">The Short-Sleeve Crew Neck
+                                                    Bodysuit</a></h6>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="hover-scale">
+                                            <div class="hover-scale-in">
+                                                <a href="#">
+                                                    <img src="@@imgPath/img/swimwear/swimwear-mega-menu-2.jpg" title=""
+                                                        alt="">
+                                                </a>
+                                            </div>
+                                            <h6 class="small pt-2 m-0"><a href="#"
+                                                    class="small text-reset link-effect">The Short-Sleeve Crew Neck
+                                                    Bodysuit</a></h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown dropdown-full nav-item">
+                        <a href="#" class="nav-link">Absolue</a>
+                        <div class="dropdown-menu dropdown-mega-menu py-6">
+                            <div class="container">
+                                <div class="row g-3 g-xl-5">
+                                    <div class="col-md-3">
+                                        <h6 class="sm-title-03 mb-4">Swimwear</h6>
+                                        <ul class="list-unstyled link-list-style-01">
+                                            <li>
+                                                <a href="#">Swim Tops</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Swim Bottoms</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">One pieces</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Cover-ups</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h6 class="sm-title-03 mb-4">Clothing</h6>
+                                        <ul class="list-unstyled link-list-style-01">
+                                            <li>
+                                                <a href="#">Dresses</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Sweaters</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Pants</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Shirts</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Shorts</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Lounge</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h6 class="sm-title-03 mb-4">Accessories</h6>
+                                        <ul class="list-unstyled link-list-style-01">
+                                            <li>
+                                                <a href="#">Bags</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Eyewear</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Jewelry</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Sandals</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Slippers</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Underthings</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="hover-scale">
+                                            <div class="hover-scale-in">
+                                                <a href="#">
+                                                    <img src="@@imgPath/img/swimwear/swimwear-mega-menu-2.jpg" title=""
+                                                        alt="">
+                                                </a>
+                                            </div>
+                                            <h6 class="small pt-2 m-0"><a href="#"
+                                                    class="small text-reset link-effect">The Short-Sleeve Crew Neck
+                                                    Bodysuit</a></h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown nav-item">
+                        <a href="#" class="nav-link">Pages</a>
+                        <ul class="dropdown-menu left shadow-lg">
+                            <li><a class="dropdown-item" href="../pages/about.html">About</a></li>
+                            <li><a class="dropdown-item" href="../pages/faq.html">FAQ's</a></li>
+                            <li><a class="dropdown-item" href="../pages/policy.html">Policy</a></li>
+                            <li><a class="dropdown-item" href="../pages/support.html">Support</a></li>
+                            <li><a class="dropdown-item" href="../pages/support-topic.html">Support Topic</a></li>
+                            <li><a class="dropdown-item" href="../pages/contact-us.html">Contact Us</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown nav-item">
+                        <a href="#" class="nav-link">Blog</a>
+                        <ul class="dropdown-menu left shadow-lg">
+                            <li><a class="dropdown-item" href="../blog/blog.html">Blog</a></li>
+                            <li><a class="dropdown-item" href="../blog/blog-single.html">Blog Single</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-danger">Sale</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- End Menu -->
+        </div>
+    </nav>
+    <!-- End Desktop Menu -->
+
+    <!-- Mobile Menu -->
+    @@include('./header/_mobile-header-top.html', {
+        "path": "..",
+        "imgPath": "../../assets",
+    })
+    <!-- End Mobile Menu -->
+    
+</header>
+
+<!-- Mobile Bottom -->
+@@include('./header/_mobile-header-bottom.html', {
+    "path": "..",
+    "imgPath": "../../assets",
+    "MobExtraClass": "",
+})
+<!-- End Mobile Bottom -->

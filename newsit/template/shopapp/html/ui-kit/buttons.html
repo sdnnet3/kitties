@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="zxx">
+
+<head>
+    @@include('./_head.html', {
+    "path": "../../assets",
+    "title": "ShopApp - eCommerce Bootstrap 5 Template"
+    })
+</head>
+
+<body>
+    <!-- Skippy & Prload -->
+    @@include('./_skippy.html',{
+    "path": "",
+    })
+    <!-- Edn Skippy & Prload -->
+    <!-- Size Chart  -->
+    @@include('./_all-popups.html', {
+    "path": "..",
+    })
+    <!-- End Size Chart  -->
+    <!-- 
+    ========================
+        Wrapper 
+    ========================
+    -->
+    <div class="wrapper">
+        <!-- heder height -->
+        <div class="header-height-bar"></div>
+        <!-- Header -->
+        @@include('./header/_header-01.html', {
+        "path": "./html",
+        "imgPath": "../../assets",
+        "HeaderClass": "bg-mode-re header-light fixed-top header-height",
+        "ContainerClass": "container",
+        })
+        <!-- End Header -->
+        <!-- Main -->
+        <main>
+            <section class="section">
+                <div class="container">
+                    <h4 class="sm-title-02 mb-5 fw-500">Default Button</h4>
+                    <div class="d-flex align-items-center flex-wrap">
+                        <button type="button" class="my-2 me-2 btn btn-primary">Primary</button>
+                        <button type="button" class="my-2 me-2 btn btn-secondary">Secondary</button>
+                        <button type="button" class="my-2 me-2 btn btn-success">Success</button>
+                        <button type="button" class="my-2 me-2 btn btn-danger">Danger</button>
+                        <button type="button" class="my-2 me-2 btn btn-warning">Warning</button>
+                        <button type="button" class="my-2 me-2 btn btn-info">Info</button>
+                        <button type="button" class="my-2 me-2 btn btn-dark">Dark</button>
+                        <button type="button" class="my-2 me-2 btn btn-link">Link</button>
+                        <button type="button" class="my-2 me-2 btn btn-mode">Mode</button>
+                        <div class="bg-black py-1 px-3">
+                            <button type="button" class="my-2 me-2 btn btn-light">Light</button>
+                            <button type="button" class="my-2 btn btn-white">White</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <h4 class="sm-title-02 mb-5 fw-500">Button Pill</h4>
+                    <div class="d-flex align-items-center flex-wrap">
+                        <button type="button" class="my-2 me-2 btn rounded-pill btn-primary">Primary</button>
+                        <button type="button" class="my-2 me-2 btn rounded-pill btn-secondary">Secondary</button>
+                        <button type="button" class="my-2 me-2 btn rounded-pill btn-success">Success</button>
+                        <button type="button" class="my-2 me-2 btn rounded-pill btn-danger">Danger</button>
+                        <button type="button" class="my-2 me-2 btn rounded-pill btn-warning">Warning</button>
+                        <button type="button" class="my-2 me-2 btn rounded-pill btn-info">Info</button>
+                        <button type="button" class="my-2 me-2 btn rounded-pill btn-dark">Dark</button>
+                        <button type="button" class="my-2 me-2 btn rounded-pill btn-link">Link</button>
+                        <button type="button" class="my-2 me-2 btn rounded-pill btn-mode">Mode</button>
+                        <div class="bg-black py-1 px-3">
+                            <button type="button" class="my-2 me-2 rounded-pill btn btn-light">Light</button>
+                            <button type="button" class="my-2 btn rounded-pill btn-white">White</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <h4 class="sm-title-02 mb-5 fw-500">Button Outline</h4>
+                    <div class="d-flex align-items-center flex-wrap">
+                        <button type="button" class="my-2 me-2 btn btn-outline-primary">Primary</button>
+                        <button type="button" class="my-2 me-2 btn btn-outline-secondary">Secondary</button>
+                        <button type="button" class="my-2 me-2 btn btn-outline-success">Success</button>
+                        <button type="button" class="my-2 me-2 btn btn-outline-danger">Danger</button>
+                        <button type="button" class="my-2 me-2 btn btn-outline-warning">Warning</button>
+                        <button type="button" class="my-2 me-2 btn btn-outline-info">Info</button>
+                        <button type="button" class="my-2 me-2 btn btn-outline-dark">Dark</button>
+                        <button type="button" class="my-2 me-2 btn btn-outline-mode">Mode</button>
+                        <div class="bg-black py-1 px-3">
+                            <button type="button" class="my-2 me-2 btn btn-outline-light">Light</button>
+                            <button type="button" class="my-2 btn btn-outline-white">White</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <h4 class="sm-title-02 mb-5 fw-500">Button With Icons</h4>
+                    <div class="d-flex align-items-center">
+                        <button type="button" class="my-2 me-2 btn btn-primary">
+                            <span class="btn-icon"><i class="bi-check-circle-fill"></i></span>
+                            <span class="btn-text">Primary</span>
+                        </button>
+                        <button type="button" class="my-2 me-2 btn btn-secondary">
+                            <span class="btn-text">Secondary</span>
+                            <span class="btn-icon"><i class="bi-check-lg"></i></span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <h4 class="sm-title-02 mb-5 fw-500">Button With Hover Shadow</h4>
+                    <div class="d-flex align-items-center">
+                        <button type="button" class="my-2 me-2 btn btn-shadow btn-primary">
+                            Primary
+                        </button>
+                        <button type="button" class="my-2 me-2 btn btn-shadow btn-secondary">
+                            Primary
+                        </button>
+                        <button type="button" class="my-2 me-2 btn btn-shadow btn-success">
+                            Primary
+                        </button>
+                        <button type="button" class="my-2 me-2 btn btn-shadow btn-danger">
+                            Primary
+                        </button>
+                        <button type="button" class="my-2 me-2 btn btn-shadow btn-warning">
+                            Primary
+                        </button>
+                        <button type="button" class="my-2 me-2 btn btn-shadow btn-info">
+                            Primary
+                        </button>
+                        <button type="button" class="my-2 me-2 btn btn-shadow btn-dark">
+                            Primary
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <h4 class="sm-title-02 mb-5 fw-500">Soft Buttons</h4>
+                    <div class="d-flex align-items-center">
+                        <button type="button" class="my-2 me-2 btn btn-shadow btn-primary-soft">
+                            Primary
+                        </button>
+                        <button type="button" class="my-2 me-2 btn btn-shadow btn-secondary-soft">
+                            Primary
+                        </button>
+                        <button type="button" class="my-2 me-2 btn btn-shadow btn-success-soft">
+                            Primary
+                        </button>
+                        <button type="button" class="my-2 me-2 btn btn-shadow btn-danger-soft">
+                            Primary
+                        </button>
+                        <button type="button" class="my-2 me-2 btn btn-shadow btn-warning-soft">
+                            Primary
+                        </button>
+                        <button type="button" class="my-2 me-2 btn btn-shadow btn-info-soft">
+                            Primary
+                        </button>
+                        <button type="button" class="my-2 me-2 btn btn-shadow btn-dark-soft">
+                            Primary
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <h4 class="sm-title-02 mb-5 fw-500">Hover Slide Buttons</h4>
+                    <div class="d-flex align-items-center">
+                        <button type="button" class="my-2 me-2 btn rounded-pill btn-slide btn-slide-top btn-outline-primary">
+                            <span class="btn-slide-bg bg-primary"></span>
+                            <span class="btn-slide-text">
+                                slide Top
+                            </span>
+                        </button>
+                        <button type="button" class="my-2 me-2 btn btn-slide btn-slide-bottom btn-outline-secondary">
+                            <span class="btn-slide-bg bg-secondary"></span>
+                            <span class="btn-slide-text">
+                                slide Bottom
+                            </span>
+                        </button>
+                        <button type="button" class="my-2 me-2 btn btn-slide btn-slide-left btn-outline-success">
+                            <span class="btn-slide-bg bg-success"></span>
+                            <span class="btn-slide-text">
+                                slide Left
+                            </span>
+                        </button>
+                        <button type="button" class="my-2 me-2 btn btn-slide btn-slide-right btn-outline-danger">
+                            <span class="btn-slide-bg bg-danger"></span>
+                            <span class="btn-slide-text">
+                                slide Right
+                            </span>
+                        </button>
+                        <button type="button" class="my-2 me-2 btn btn-slide btn-slide-center btn-outline-warning">
+                            <span class="btn-slide-bg bg-warning"></span>
+                            <span class="btn-slide-text">
+                                slide Center
+                            </span>
+                        </button>
+                        <button type="button" class="my-2 me-2 btn btn-slide btn-slide-middle btn-outline-info">
+                            <span class="btn-slide-bg bg-info"></span>
+                            <span class="btn-slide-text">
+                                slide Middle
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <h4 class="sm-title-02 mb-5 fw-500">Button - Hover Icon</h4>
+                    <div class="d-flex align-items-center">
+                        <button type="button" class="my-2 me-2 btn btn-sm btn-hover-icon btn-secondary">
+                            <span class="btn-text">Icon Right</span>
+                            <span class="btn-icon"><i class="bi-check-lg"></i></span>
+                        </button>
+                        <button type="button" class="my-2 me-2 btn btn-hover-icon btn-primary">
+                            <span class="btn-icon"><i class="bi-arrow-right"></i></span>
+                            <span class="btn-text">Icon Left</span>
+                        </button>
+                        <button type="button" class="my-2 me-2 btn btn-lg btn-hover-icon btn-danger">
+                            <span class="btn-text">Icon Right</span>
+                            <span class="btn-icon"><i class="bi-arrow-right"></i></span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <h4 class="sm-title-02 mb-5 fw-500">Button - Hover Text</h4>
+                    <div class="d-flex align-items-center">
+                        <button type="button" class="my-2 me-2 btn btn-sm btn-hover-text btn-secondary">
+                            <span class="btn-text">Icon Right</span>
+                            <span class="btn-text-hover"><i class="bi-check-lg"></i></span>
+                        </button>
+                        <button type="button" class="my-2 me-2 btn btn-hover-text btn-primary">
+                            <span class="btn-text">Hover</span>
+                            <span class="btn-text-hover">Me</span>
+                        </button>
+                        <button type="button" class="my-2 me-2 btn btn-lg btn-hover-text btn-danger">
+                            <span class="btn-text">Contact</span>
+                            <span class="btn-text-hover">ME</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- End Main -->
+        <!-- Footer -->
+        @@include('./footer/_footer-03.html', {
+        "path": ".",
+        "imgPath": "../../assets",
+        })
+        <!-- End Footer -->
+    </div>
+    <!-- 
+    ========================
+       End Wrapper 
+    ========================
+    -->
+    <!-- script start -->
+    @@include('./_scripts.html', {
+    "path": "../../assets",
+    })
+    <!-- End script start -->
+</body>
+
+</html>

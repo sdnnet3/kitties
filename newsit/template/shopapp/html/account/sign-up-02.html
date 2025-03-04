@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="zxx">
+
+<head>
+    @@include('./_head.html', {
+    "path": "../../assets",
+    "title": "ShopApp - eCommerce Bootstrap 5 Template"
+    })
+</head>
+
+<body>
+    <!-- Skippy & Prload -->
+    @@include('./_skippy.html',{
+    "path": "",
+    })
+    <!-- Edn Skippy & Prload -->
+    <!-- Size Chart  -->
+    @@include('./_all-popups.html', {
+    "path": "..",
+    })
+    <!-- End Size Chart  -->
+    <!-- 
+    ========================
+        Wrapper 
+    ========================
+    -->
+    <div class="wrapper">
+        <!-- Header -->
+        @@include('./header/_header-02.html', {
+        "path": "./html",
+        "imgPath": "../../assets",
+        "HeaderClass": "header-dark fixed-top header-fluid header-transparent header-height",
+        "ContainerClass": "container-fluid",
+        })
+        <!-- End Header -->
+        <!-- Main -->
+        <main>
+            <!-- Page Title -->
+            <div class="bg-no-repeat bg-cover bg-right-center position-relative" style="background-image: url(../../assets/img/fashion2/home-banner-3.jpg);">
+                <div class="position-absolute top-0 end-0 start-0 bottom-0 opacity-3 bg-dark"></div>
+                <!-- Header Height Bar -->
+                <div class="header-height-bar border-bottom opacity-3"></div>
+                <div class="container py-6 position-relative">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 my-2">
+                            <h1 class="m-0 h4 text-center text-lg-start text-white">Register</h1>
+                        </div>
+                        <div class="col-lg-6 my-2">
+                            <ol class="breadcrumb breadcrumb-light m-0 small justify-content-center justify-content-lg-end">
+                                <li class="breadcrumb-item"><a class="text-nowrap" href="#">Home</a></li>
+                                <li class="breadcrumb-item text-nowrap active" aria-current="page">Register</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Page Title -->
+            <!-- Section -->
+            <section class="section">
+                <div class="container section">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-5 col-xxl-4">
+                            <h5 class="h3 mb-4">Register</h5>
+                            <form>
+                                <div class="form-group mb-3">
+                                    <label for="name_1" class="form-label">Name<span class="text-danger">*</span></label>
+                                    <input type="text" id="name_1" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label for="email_1" class="form-label">Email<span class="text-danger">*</span></label>
+                                    <input type="text" id="email_1" class="form-control" placeholder="E-mail">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <div class="row align-items-center">
+                                        <label class="form-label col" for="exampleInputPassword01">Password<span class="text-danger">*</span></label>
+                                    </div>
+                                    <input type="password" class="form-control" id="exampleInputPassword01" placeholder="*********">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label class="form-label col" for="exampleInputPassword_1">Conform Password<span class="text-danger">*</span></label>
+                                    <input type="password" class="form-control" id="exampleInputPassword_1" placeholder="*********">
+                                </div>
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="form2Example3" checked="">
+                                    <label class="form-check-label" for="form2Example3"> By register, I read & accept the terms. </label>
+                                </div>
+                                <div class="form-group text-center">
+                                    <button type="submit" class="btn btn-primary w-100">
+                                        Create Account
+                                    </button>
+                                </div>
+                            </form>
+                            <div class="pt-4 text-center">
+                                <span class="text-muted">Have an account? <a href="sign-up.html">Login here</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Section -->
+        </main>
+        <!-- End Main -->
+        <!-- Footer -->
+        @@include('./footer/_footer-01.html', {
+        "path": ".",
+        "imgPath": "../../assets",
+        })
+        <!-- End Footer -->
+    </div>
+    <!-- 
+    ========================
+       End Wrapper 
+    ========================
+    -->
+    <!-- script start -->
+    @@include('./_scripts.html', {
+    "path": "../../assets",
+    })
+    <!-- End script start -->
+</body>
+
+</html>

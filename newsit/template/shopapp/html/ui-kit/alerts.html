@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="zxx">
+
+<head>
+    @@include('./_head.html', {
+    "path": "../../assets",
+    "title": "ShopApp - eCommerce Bootstrap 5 Template"
+    })
+</head>
+
+<body>
+    <!-- Skippy & Prload -->
+    @@include('./_skippy.html',{
+    "path": "",
+    })
+    <!-- Edn Skippy & Prload -->
+    <!-- Size Chart  -->
+    @@include('./_all-popups.html', {
+    "path": "..",
+    })
+    <!-- End Size Chart  -->
+    <!-- 
+    ========================
+        Wrapper 
+    ========================
+    -->
+    <div class="wrapper">
+        <!-- heder height -->
+        <div class="header-height-bar"></div>
+        <!-- Header -->
+        @@include('./header/_header-01.html', {
+        "path": "./html",
+        "imgPath": "../../assets",
+        "HeaderClass": "bg-mode-re header-light fixed-top header-height",
+        "ContainerClass": "container",
+        })
+        <!-- End Header -->
+        <!-- Main -->
+        <main>
+            <section class="section">
+                <div class="container">
+                    <h4 class="sm-title-02 mb-5 fw-500">Alerts</h4>
+                    <div class="alert alert-primary" role="alert">
+                        A simple primary alert—check it out!
+                    </div>
+                    <div class="alert alert-secondary" role="alert">
+                        A simple secondary alert—check it out!
+                    </div>
+                    <div class="alert alert-success" role="alert">
+                        A simple success alert—check it out!
+                    </div>
+                    <div class="alert alert-danger" role="alert">
+                        A simple danger alert—check it out!
+                    </div>
+                    <div class="alert alert-warning" role="alert">
+                        A simple warning alert—check it out!
+                    </div>
+                    <div class="alert alert-info" role="alert">
+                        A simple info alert—check it out!
+                    </div>
+                    <div class="alert alert-light" role="alert">
+                        A simple light alert—check it out!
+                    </div>
+                    <div class="alert alert-dark" role="alert">
+                        A simple dark alert—check it out!
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <h4 class="sm-title-02 mb-5 fw-500">Live Alerts</h4>
+                    <div>
+                        <div id="liveAlertPlaceholder"></div>
+                        <button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>
+                        <script type="text/javascript">
+                        const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+                        const appendAlert = (message, type) => {
+                            const wrapper = document.createElement('div')
+                            wrapper.innerHTML = [
+                                `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+                                `   <div>${message}</div>`,
+                                '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+                                '</div>'
+                            ].join('')
+
+                            alertPlaceholder.append(wrapper)
+                        }
+
+                        const alertTrigger = document.getElementById('liveAlertBtn')
+                        if (alertTrigger) {
+                            alertTrigger.addEventListener('click', () => {
+                                appendAlert('Nice, you triggered this alert message!', 'success')
+                            })
+                        }
+                        </script>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <h4 class="sm-title-02 mb-5 fw-500">Live Link color</h4>
+                    <div>
+                        <div class="alert alert-primary" role="alert">
+                            A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+                        </div>
+                        <div class="alert alert-secondary" role="alert">
+                            A simple secondary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+                        </div>
+                        <div class="alert alert-success" role="alert">
+                            A simple success alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+                        </div>
+                        <div class="alert alert-danger" role="alert">
+                            A simple danger alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+                        </div>
+                        <div class="alert alert-warning" role="alert">
+                            A simple warning alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+                        </div>
+                        <div class="alert alert-info" role="alert">
+                            A simple info alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+                        </div>
+                        <div class="alert alert-light" role="alert">
+                            A simple light alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+                        </div>
+                        <div class="alert alert-dark" role="alert">
+                            A simple dark alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <h4 class="sm-title-02 mb-5 fw-500">Additional content</h4>
+                    <div>
+                        <div class="alert alert-success" role="alert">
+                            <h4 class="alert-heading">Well done!</h4>
+                            <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+                            <hr>
+                            <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <h4 class="sm-title-02 mb-5 fw-500">Alerts With Icons </h4>
+                    <div>
+                        <div class="alert alert-primary d-flex align-items-center" role="alert">
+                            <i class="flex-shrink-0 me-2 bi-info-fill"></i>
+                            <div>
+                                An example alert with an icon
+                            </div>
+                        </div>
+                        <div class="alert alert-success d-flex align-items-center" role="alert">
+                            <i class="flex-shrink-0 me-2 bi-check-circle-fill"></i>
+                            <div>
+                                An example success alert with an icon
+                            </div>
+                        </div>
+                        <div class="alert alert-warning d-flex align-items-center" role="alert">
+                            <i class="flex-shrink-0 me-2 bi-exclamation-triangle-fill"></i>
+                            <div>
+                                An example warning alert with an icon
+                            </div>
+                        </div>
+                        <div class="alert alert-danger d-flex align-items-center" role="alert">
+                            <i class="flex-shrink-0 me-2 bi-exclamation-triangle-fill"></i>
+                            <div>
+                                An example danger alert with an icon
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <h4 class="sm-title-02 mb-5 fw-500">Alerts Dismissing </h4>
+                    <div>
+                        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- End Main -->
+        <!-- Footer -->
+        @@include('./footer/_footer-03.html', {
+        "path": ".",
+        "imgPath": "../../assets",
+        })
+        <!-- End Footer -->
+    </div>
+    <!-- 
+    ========================
+       End Wrapper 
+    ========================
+    -->
+    <!-- script start -->
+    @@include('./_scripts.html', {
+    "path": "../../assets",
+    })
+    <!-- End script start -->
+</body>
+
+</html>

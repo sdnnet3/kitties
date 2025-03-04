@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Title -->
+    <title>ShopApp - eCommerce Bootstrap 5 Template</title>
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Favicon -->
+    <!-- CSS Template -->
+    <link href="static/vendor/code/prism.css" rel="stylesheet">
+    <link href="static/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- main -->
+    <main>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <!-- 
+                ============================
+                Content
+                ============================
+                 -->
+                <div class="col-md-9 col-xl-10 py-md-3 pl-md-5 px-content">
+                    <!-- Getting Started -->
+                    <div id="#introduction" class="mb-6">
+                        <h3 class="h1">Basics</h3>
+                        <p class="lead">This guide assumes basic knowledge of HTML, CSS and Javascript.</p>
+                        <p>All of the template files will be delivered in a zip file. Simply extract the zip file, import it to your favorite text editor and it's ready for your customizations.</p>
+                        <p>We recommend sublime Code or Atom</p>
+                        <p>If you had any problems, please do not hesitate to contact us from <code>sage.kv4@gmail.com</code> </p>
+                        <hr class="my-6">
+                        <div class="alert alert-info mb-6">
+                            <p class="m-0">Do not start from scratch. Use an existing page or a section and start from there.</p>
+                        </div>
+                    </div>
+                    <!-- End Getting Started -->
+                    <!-- Structure -->
+                    <div id="#filestructure" class="mb-6">
+                        <h3 class="h1">Structure</h3>
+                        <p class="lead">Extract the zip file you received after purchase, and you would find the exact below files and folders:</p>
+                        <pre><code class="language-css">|── templete-doc
+|  |── Document files
+|── templete
+|───|─ shopapp
+    |  |── assets
+    |  |  | css
+    |  |  | img
+    |  |  | js
+    |  |  | scss
+    |  |  | vendor
+    |  |── html
+    |  |  | account
+    |  |  | blog
+    |  |  | home
+    |  |  | pages
+    |  |  | product-details
+    |  |  | shop-01
+    |  |  | shop-02
+    |  |  | shop-03
+    |  |  | shop-04
+|  |──gulpfile.js
+|  |──package.json</code></pre>
+                    </div>
+                    <!-- End Structure -->
+                    <!-- Dev Tools -->
+                    <div class="mb-8">
+                        <h2>Setting up Dev Tools</h2>
+                        <p>Unzip the theme package to any folder and open a command line at that location.</p>
+                        <p>shopapp's dev tools require <a href="https://nodejs.org/en/" target="_blank">NodeJs</a> and the <a href="https://gulpjs.com/" target="_blank">Gulp CLI</a> package. Assuming you have Node and Git installed, the following command installs Gulp Command Line Utility globally so the gulp command can be used anywhere in your system.</p>
+                        
+                        <div class="alert alert-warning mb-6">
+                            <p class="m-0">Node v18.16.0</p>
+                            <p class="m-0">NPM v9.2.0</p>
+                        </div>
+
+                        <pre class="bg-gray-100 border rounded-lg p-3"><code class="language-css">npm install gulp-cli -g</code></pre>
+                        <p>When you have installed Gulp, run npm install and the required packages for the shopapp dev tools will be downloaded to the node_modules directory.</p>
+                        <pre class="bg-gray-100 border rounded-lg p-3"><code class="language-css">npm install</code></pre>
+                        <p>If you see errors such as <code>EACCESS</code> during installation, please follow these instructions at <a href="https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally" target="_blank">npm docs</a> to install Node via <a href="https://github.com/creationix/nvm/blob/master/README.md" target="_blank">nvm</a> which resolves the permissions errors.</p>
+                        <p>Run gulp in the shopapp/ folder to serve the project files using BrowserSync. Running gulp will compile the theme and open /index.html in your main browser.</p>
+                        <pre class="bg-gray-100 border rounded-lg p-3"><code class="language-css">gulp</code></pre>
+                        <p>While the gulp command is running, files in the <code>assets/scss/</code>, <code>assets/js/</code> and <code>html/</code> folders will be monitored for changes. Files from the assets/scss/ folder will generate injected CSS.</p>
+                        <p>Hit <code>CTRL+C</code> to terminate the gulp command. This will stop the local server from running.</p>
+                        <h2 class="pt-4">Theme without Sass, Gulp or Npm</h2>
+                        <p>If you’d like to get a version of our theme without Sass, Gulp or Npm, we’ve got you covered. Run the following command:</p>
+                        <pre class="bg-gray-100 border rounded-lg p-3"><code class="language-css">gulp build:dev</code></pre>
+                        <p>This will generate a folder <code>dev</code> which will have unminified CSS, Html and Javascript.</p>
+                        <h2 class="pt-4">Minified version</h2>
+                        <p>If you’d like to compile the code and get a minified version just run the following Gulp command:</p>
+                        <pre class="bg-gray-100 border rounded-lg p-3"><code class="language-css">gulp build:dist</code></pre>
+                        <p>This will generate a folder <code>dist</code> which will have minified CSS, Html and Javascript.</p>
+                    </div>
+                    <!-- End Dev Tools -->
+                    <div class="alert alert-warning mb-6">
+                        <p class="m-0">We have already compiled <code>dev</code> and <code>dist</code> folder just for the reference. if you want to update color or any other code you should be work in shopapp folder and then compile again.</p>
+                    </div>
+                    <div class="alert alert-warning mb-6">
+                        <p class="m-0">All Header, Footer, Head and script common code are in <code>partials</code> folder.</p>
+                    </div>
+                    <!-- Color Edit -->
+                    <div class="mb-8">
+                        <h2 class="h1">Edit the Color Scheme</h2>
+                        <p>Using SCSS you can easily transform the color scheme of your site.</p>
+                        <h4 class="mb-4 mt-5 h5">Editing the default color scheme variables</h4>
+                        <p class="h6">1. Open the _variables.scss file</p>
+                        <p>The <code>_variables.scss</code> file is located in the <code>/assets/scss/core/custom</code> directory of the theme package.</p>
+                        <p class="h6">2. Change variable values</p>
+                        <p>Inside <code>_variables.scss</code> under the Color scheme section you'll see the color variables. Modify the HEX values to change the color scheme.</p>
+                        <pre class="bg-gray-100 border rounded-lg p-3"><code class="language-css">$px-primary: #008aff !default;</code></pre>
+                    </div>
+                    <!-- End Color Edit -->
+                    <!-- <div class="mb-8">
+                        <h2 class="h1">Contact Form</h2>
+                        <p>In order to receive emails in your inbox, open <code>\assets\vendor\mail\bat\rd-mailform.config.json</code> and go to <code>Line 9 :</code> and replace <code>youremail@mail.com</code> with your email, that's all !</p>
+                        <p><i>For more details: <a href="https://github.com/ZemezPlugins/rd-mailform">https://github.com/ZemezPlugins/rd-mailform</a> </i></p>
+                    </div> -->
+                    <!-- ====================================  -->
+                    <div class="mb-8">
+                        <h2 class="h1">Features</h2>
+                        <ul>
+                            <li>Responsive Layout</li>
+                            <li>Clean Code</li>
+                            <li>W3C Validated</li>
+                            <li>HTML5 ,CSS3 and SASS</li>
+                            <li>Cross Browser Compatible</li>
+                            <li>100% Customizable, all colors can be customized</li>
+                            <li>Font Icons</li>
+                            <li>Well-commented code</li>
+                            <li>Google Fonts</li>
+                        </ul>
+                    </div>
+                    <div class="mb-8">
+                        <h2 class="h1">Sources and Credits</h2>
+                        <ul>
+                            <li><strong>bootstrap</strong></li>
+                            <li><strong>bootstrap icon</strong></li>
+                            <li><strong>magnific</strong></li>
+                            <li><strong>swiperjs</strong></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Enc Content -->
+            </div>
+        </div>
+    </main>
+    <!-- End main -->
+    <!-- jquery -->
+    <script src="static/js/jquery-3.5.1.slim.min.js"></script>
+    <!-- appear -->
+    <!-- countTo -->
+    <script src="static/vendor/code/prism-min.js"></script>
+    <!-- Theme Js -->
+</body>
+<!-- end body -->
+
+</html>

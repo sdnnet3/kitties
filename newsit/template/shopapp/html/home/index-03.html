@@ -1,0 +1,1219 @@
+<!doctype html>
+<html lang="zxx">
+
+<head>
+    @@include('./_head.html', {
+    "path": "../../assets",
+    "title": "ShopApp - eCommerce Bootstrap 5 Template"
+    })
+</head>
+
+<body>
+    <!-- Skippy & Prload -->
+    @@include('./_skippy.html',{
+    "path": "",
+    })
+    <!-- Edn Skippy & Prload -->
+    <!-- Size Chart  -->
+    @@include('./_all-popups.html', {
+    "path": "..",
+    })
+    <!-- End Size Chart  -->
+    <!-- 
+    ========================
+        Wrapper 
+    ========================
+    -->
+    <div class="wrapper">
+        <!-- heder height -->
+        <div class="header-height-bar"></div>
+        <!-- Header -->
+        @@include('./header/_header-01.html', {
+        "path": "./html",
+        "imgPath": "../../assets",
+        "HeaderClass": "bg-mode-re header-light fixed-top header-height",
+        "ContainerClass": "container",
+        })
+        <!-- End Header -->
+        <!-- Main -->
+        <main>
+            <!-- Home Slider -->
+            <div class="swiper swiper-container" data-swiper-options='{
+                  "slidesPerView": 1,
+                  "spaceBetween": 15,
+                  "loop": true,
+                  "centeredSlides": true,
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "clickable": true
+                    },
+                  "navigation": {
+                    "nextEl": ".swiper-next-02",
+                    "prevEl": ".swiper-prev-02"
+                  },
+                  "autoplay": {
+                    "delay": 3500,
+                    "disableOnInteraction": false
+                  },
+                  "breakpoints": {
+                    "600": {
+                      "slidesPerView": 2
+                    },
+                    "991": {
+                      "slidesPerView": 3
+                    },
+                    "1200": {
+                      "slidesPerView": 3
+                    }
+                  }
+                }'>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="bg-no-repeat bg-cover bg-center mx-1" style="background-image: url(../../assets/img/fashion3/home-banner-5.jpg);">
+                            <div class="container">
+                                <div class="row min-vh-75 align-items-center justify-content-center py-12">
+                                    <div class="col-lg-8 text-center">
+                                        <div class="bg-mode-re px-4 py-4 hc-slider-box">
+                                            <h6 class="fw-500 text-uppercase mb-3">You're Looking Good</h6>
+                                            <h1 class="display-6 fw-600 text-uppercase">New LookBook</h1>
+                                            <div class="pt-2">
+                                                <a class="btn btn-outline-mode" href="#">Discover More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="bg-no-repeat bg-cover bg-center mx-1" style="background-image: url(../../assets/img/fashion3/home-banner-6.jpg);">
+                            <div class="container">
+                                <div class="row min-vh-75 align-items-center justify-content-center py-12">
+                                    <div class="col-lg-8 text-center">
+                                        <div class="bg-mode-re px-4 py-4 hc-slider-box">
+                                            <h6 class="fw-500 text-uppercase mb-3">You're Looking Good</h6>
+                                            <h1 class="display-6 fw-600 text-uppercase">New LookBook</h1>
+                                            <div class="pt-2">
+                                                <a class="btn btn-outline-mode" href="#">Discover More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="bg-no-repeat bg-cover bg-center mx-1" style="background-image: url(../../assets/img/fashion3/home-banner-7.jpg);">
+                            <div class="container">
+                                <div class="row min-vh-75 align-items-center justify-content-center py-12">
+                                    <div class="col-lg-8 text-center">
+                                        <div class="bg-mode-re px-4 py-4 hc-slider-box">
+                                            <h6 class="fw-500 text-uppercase mb-3">You're Looking Good</h6>
+                                            <h1 class="display-6 fw-600 text-uppercase">New LookBook</h1>
+                                            <div class="pt-2">
+                                                <a class="btn btn-outline-mode" href="#">Discover More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="bg-no-repeat bg-cover bg-center mx-1" style="background-image: url(../../assets/img/fashion3/home-banner-8.jpg);">
+                            <div class="container">
+                                <div class="row min-vh-75 align-items-center justify-content-center py-12">
+                                    <div class="col-lg-8 text-center">
+                                        <div class="bg-mode-re px-4 py-4 hc-slider-box">
+                                            <h6 class="fw-500 text-uppercase mb-3">You're Looking Good</h6>
+                                            <h1 class="display-6 fw-600 text-uppercase">New LookBook</h1>
+                                            <div class="pt-2">
+                                                <a class="btn btn-outline-mode" href="#">Discover More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-arrow-style-01 swiper-next swiper-next-02"><i class="bi bi-chevron-right"></i> </div>
+                <div class="swiper-arrow-style-01 swiper-prev swiper-prev-02"><i class="bi bi-chevron-left"></i></div>
+                <div class="swiper-pagination swiper-pagination-white"></div>
+            </div>
+            <!-- End Home Slider -->
+            <!-- section -->
+            <section class="py-3">
+                <div class="container">
+                    <div class="row g-3">
+                        <div class="col-lg-3">
+                            <div class="position-relative hover-scale">
+                                <div class="hover-scale-in">
+                                    <img class="w-100" src="../../assets/img/fashion3/shop-banner-12.jpg" title="" alt="">
+                                </div>
+                                <div class="position-absolute bottom-0 start-0">
+                                    <div class="w-100 p-4">
+                                        <h3 class="h6 text-dark bg-white px-3 py-2">
+                                            <a href="#" class="text-reset">Day Dresses</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="position-relative hover-scale mt-3">
+                                <div class="hover-scale-in">
+                                    <img class="w-100" src="../../assets/img/fashion3/shop-banner-14.jpg" title="" alt="">
+                                </div>
+                                <div class="position-absolute bottom-0 start-0">
+                                    <div class="w-100 p-4">
+                                        <h3 class="h6 text-dark bg-white px-3 py-2">
+                                            <a href="#" class="text-reset">The Vacation Shop</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="position-relative hover-scale">
+                                <div class="hover-scale-in">
+                                    <img class="w-100" src="../../assets/img/fashion3/shop-banner-13.jpg" title="" alt="">
+                                </div>
+                                <div class="position-absolute top-0 end-0">
+                                    <div class="w-100 p-4">
+                                        <h3 class="h6 text-dark bg-white px-3 py-2">
+                                            <a href="#" class="text-reset">Holiday Shoes</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="position-relative hover-scale">
+                                <div class="hover-scale-in">
+                                    <img class="w-100" src="../../assets/img/fashion3/shop-banner-15.jpg" title="" alt="">
+                                </div>
+                                <div class="position-absolute bottom-0 start-0">
+                                    <div class="w-100 p-4">
+                                        <h3 class="h6 text-dark bg-white px-3 py-2">
+                                            <a href="#" class="text-reset">Day Dresses</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="position-relative hover-scale mt-3">
+                                <div class="hover-scale-in">
+                                    <img class="w-100" src="../../assets/img/fashion3/shop-banner-16.jpg" title="" alt="">
+                                </div>
+                                <div class="position-absolute bottom-0 start-0">
+                                    <div class="w-100 p-4">
+                                        <h3 class="h6 text-dark bg-white px-3 py-2">
+                                            <a href="#" class="text-reset">Up to 65% off</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End section -->
+            <!-- Product section -->
+            <section class="section">
+                <div class="container">
+                    <!-- Tabs Nav -->
+                    <ul class="nav nav-tabs nav-tabs-01 justify-content-center" id="home-3_tabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="h3_tabnav_1" data-bs-toggle="tab" data-bs-target="#h3_tab_1" type="button" role="tab" aria-controls="h3_tab_1" aria-selected="true">New Arrival</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="h3_tabnav_2" data-bs-toggle="tab" data-bs-target="#h3_tab_2" type="button" role="tab" aria-controls="h3_tab_2" aria-selected="false">Upcoming</button>
+                        </li>
+                    </ul>
+                    <!-- End Tabs Nav -->
+                    <!-- Tab Content -->
+                    <div class="tab-content" id="home-3_tabsContent">
+                        <!-- Tab pane -->
+                        <div class="tab-pane fade show active" id="h3_tab_1" role="tabpanel" aria-labelledby="h3_tabnav_1">
+                            <div class="row g-3 g-lg-4">
+                                <!-- Product Box -->
+                                <div class="col-6 col-lg-3">
+                                    <div class="product-card-3">
+                                        <div class="product-card-image">
+                                            <div class="badge-ribbon">
+                                                <span class="badge bg-danger">Sale</span>
+                                            </div>
+                                            <div class="product-action">
+                                                <a href="#" class="btn btn-dark">
+                                                    <i class="fi-heart"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-dark">
+                                                    <i class="fi-repeat"></i>
+                                                </a>
+                                                <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn btn-dark">
+                                                    <i class="fi-eye"></i>
+                                                </a>
+                                                <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn btn-dark">
+                                                    <i class="fi-shopping-cart"></i>
+                                                </a>
+                                            </div>
+                                            <div class="product-media">
+                                                <a href="#">
+                                                    <img class="img-fluid" src="../../assets/img/fashion3/product-11.jpg" title="" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-info">
+                                            <h6 class="product-title">
+                                                <a href="#">Fine-knit sweater</a>
+                                            </h6>
+                                            <div class="product-price">
+                                                <span class="text-primary">$28.<small>50</small></span>
+                                                <del class="fs-sm text-muted">$38.<small>50</small></del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Product Box -->
+                                <!-- Product Box -->
+                                <div class="col-6 col-lg-3">
+                                    <div class="product-card-3">
+                                        <div class="product-card-image">
+                                            <div class="badge-ribbon">
+                                                <span class="badge bg-danger">Sale</span>
+                                            </div>
+                                            <div class="product-action">
+                                                <a href="#" class="btn btn-dark">
+                                                    <i class="fi-heart"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-dark">
+                                                    <i class="fi-repeat"></i>
+                                                </a>
+                                                <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn btn-dark">
+                                                    <i class="fi-eye"></i>
+                                                </a>
+                                                <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn btn-dark">
+                                                    <i class="fi-shopping-cart"></i>
+                                                </a>
+                                            </div>
+                                            <div class="product-media">
+                                                <a href="#">
+                                                    <img class="img-fluid" src="../../assets/img/fashion3/product-12.jpg" title="" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-info">
+                                            <h6 class="product-title">
+                                                <a href="#">Fine-knit sweater</a>
+                                            </h6>
+                                            <div class="product-price">
+                                                <span class="text-primary">$28.<small>50</small></span>
+                                                <del class="fs-sm text-muted">$38.<small>50</small></del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Product Box -->
+                                <!-- Product Box -->
+                                <div class="col-6 col-lg-3">
+                                    <div class="product-card-3">
+                                        <div class="product-card-image">
+                                            <div class="badge-ribbon">
+                                                <span class="badge bg-danger">Sale</span>
+                                            </div>
+                                            <div class="product-action">
+                                                <a href="#" class="btn btn-dark">
+                                                    <i class="fi-heart"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-dark">
+                                                    <i class="fi-repeat"></i>
+                                                </a>
+                                                <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn btn-dark">
+                                                    <i class="fi-eye"></i>
+                                                </a>
+                                                <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn btn-dark">
+                                                    <i class="fi-shopping-cart"></i>
+                                                </a>
+                                            </div>
+                                            <div class="product-media">
+                                                <a href="#">
+                                                    <img class="img-fluid" src="../../assets/img/fashion3/product-13.jpg" title="" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-info">
+                                            <h6 class="product-title">
+                                                <a href="#">Fine-knit sweater</a>
+                                            </h6>
+                                            <div class="product-price">
+                                                <span class="text-primary">$28.<small>50</small></span>
+                                                <del class="fs-sm text-muted">$38.<small>50</small></del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Product Box -->
+                                <!-- Product Box -->
+                                <div class="col-6 col-lg-3">
+                                    <div class="product-card-3">
+                                        <div class="product-card-image">
+                                            <div class="badge-ribbon">
+                                                <span class="badge bg-danger">Sale</span>
+                                            </div>
+                                            <div class="product-action">
+                                                <a href="#" class="btn btn-dark">
+                                                    <i class="fi-heart"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-dark">
+                                                    <i class="fi-repeat"></i>
+                                                </a>
+                                                <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn btn-dark">
+                                                    <i class="fi-eye"></i>
+                                                </a>
+                                                <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn btn-dark">
+                                                    <i class="fi-shopping-cart"></i>
+                                                </a>
+                                            </div>
+                                            <div class="product-media">
+                                                <a href="#">
+                                                    <img class="img-fluid" src="../../assets/img/fashion3/product-14.jpg" title="" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-info">
+                                            <h6 class="product-title">
+                                                <a href="#">Fine-knit sweater</a>
+                                            </h6>
+                                            <div class="product-price">
+                                                <span class="text-primary">$28.<small>50</small></span>
+                                                <del class="fs-sm text-muted">$38.<small>50</small></del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Product Box -->
+                            </div>
+                        </div>
+                        <!-- Tab Pane -->
+                        <div class="tab-pane fade" id="h3_tab_2" role="tabpanel" aria-labelledby="h3_tabnav_2">
+                            <div class="row g-3 g-lg-4">
+                                <!-- Product Box -->
+                                <div class="col-6 col-lg-3">
+                                    <div class="product-card-3">
+                                        <div class="product-card-image">
+                                            <div class="badge-ribbon">
+                                                <span class="badge bg-danger">Sale</span>
+                                            </div>
+                                            <div class="product-action">
+                                                <a href="#" class="btn btn-dark">
+                                                    <i class="fi-heart"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-dark">
+                                                    <i class="fi-repeat"></i>
+                                                </a>
+                                                <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn btn-dark">
+                                                    <i class="fi-eye"></i>
+                                                </a>
+                                                <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn btn-dark">
+                                                    <i class="fi-shopping-cart"></i>
+                                                </a>
+                                            </div>
+                                            <div class="product-media">
+                                                <a href="#">
+                                                    <img class="img-fluid" src="../../assets/img/fashion3/product-15.jpg" title="" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-info">
+                                            <h6 class="product-title">
+                                                <a href="#">Fine-knit sweater</a>
+                                            </h6>
+                                            <div class="product-price">
+                                                <span class="text-primary">$28.<small>50</small></span>
+                                                <del class="fs-sm text-muted">$38.<small>50</small></del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Product Box -->
+                                <!-- Product Box -->
+                                <div class="col-6 col-lg-3">
+                                    <div class="product-card-3">
+                                        <div class="product-card-image">
+                                            <div class="badge-ribbon">
+                                                <span class="badge bg-danger">Sale</span>
+                                            </div>
+                                            <div class="product-action">
+                                                <a href="#" class="btn btn-dark">
+                                                    <i class="fi-heart"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-dark">
+                                                    <i class="fi-repeat"></i>
+                                                </a>
+                                                <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn btn-dark">
+                                                    <i class="fi-eye"></i>
+                                                </a>
+                                                <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn btn-dark">
+                                                    <i class="fi-shopping-cart"></i>
+                                                </a>
+                                            </div>
+                                            <div class="product-media">
+                                                <a href="#">
+                                                    <img class="img-fluid" src="../../assets/img/fashion3/product-16.jpg" title="" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-info">
+                                            <h6 class="product-title">
+                                                <a href="#">Fine-knit sweater</a>
+                                            </h6>
+                                            <div class="product-price">
+                                                <span class="text-primary">$28.<small>50</small></span>
+                                                <del class="fs-sm text-muted">$38.<small>50</small></del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Product Box -->
+                                <!-- Product Box -->
+                                <div class="col-6 col-lg-3">
+                                    <div class="product-card-3">
+                                        <div class="product-card-image">
+                                            <div class="badge-ribbon">
+                                                <span class="badge bg-danger">Sale</span>
+                                            </div>
+                                            <div class="product-action">
+                                                <a href="#" class="btn btn-dark">
+                                                    <i class="fi-heart"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-dark">
+                                                    <i class="fi-repeat"></i>
+                                                </a>
+                                                <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn btn-dark">
+                                                    <i class="fi-eye"></i>
+                                                </a>
+                                                <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn btn-dark">
+                                                    <i class="fi-shopping-cart"></i>
+                                                </a>
+                                            </div>
+                                            <div class="product-media">
+                                                <a href="#">
+                                                    <img class="img-fluid" src="../../assets/img/fashion3/product-17.jpg" title="" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-info">
+                                            <h6 class="product-title">
+                                                <a href="#">Fine-knit sweater</a>
+                                            </h6>
+                                            <div class="product-price">
+                                                <span class="text-primary">$28.<small>50</small></span>
+                                                <del class="fs-sm text-muted">$38.<small>50</small></del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Product Box -->
+                                <!-- Product Box -->
+                                <div class="col-6 col-lg-3">
+                                    <div class="product-card-3">
+                                        <div class="product-card-image">
+                                            <div class="badge-ribbon">
+                                                <span class="badge bg-danger">Sale</span>
+                                            </div>
+                                            <div class="product-action">
+                                                <a href="#" class="btn btn-dark">
+                                                    <i class="fi-heart"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-dark">
+                                                    <i class="fi-repeat"></i>
+                                                </a>
+                                                <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn btn-dark">
+                                                    <i class="fi-eye"></i>
+                                                </a>
+                                                <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn btn-dark">
+                                                    <i class="fi-shopping-cart"></i>
+                                                </a>
+                                            </div>
+                                            <div class="product-media">
+                                                <a href="#">
+                                                    <img class="img-fluid" src="../../assets/img/fashion3/product-18.jpg" title="" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-info">
+                                            <h6 class="product-title">
+                                                <a href="#">Fine-knit sweater</a>
+                                            </h6>
+                                            <div class="product-price">
+                                                <span class="text-primary">$28.<small>50</small></span>
+                                                <del class="fs-sm text-muted">$38.<small>50</small></del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Product Box -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Tab Content -->
+                </div>
+            </section>
+            <!-- End Product section -->
+            <!-- section -->
+            <section class="py-3">
+                <div class="container">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="position-relative hover-scale">
+                                <div class="hover-scale-in">
+                                    <a href="#">
+                                        <img class="w-100" src="../../assets/img/fashion3/shop-banner-17.jpg" title="" alt="">
+                                    </a>
+                                </div>
+                                <div class="position-absolute w-100 bottom-0 start-0 pe-none p-3">
+                                    <div class="w-100 text-center bg-mode-re p-3">
+                                        <h6 class="m-0 text-uppercase">Checkout Our Latest Collection</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="position-relative hover-scale">
+                                <div class="hover-scale-in">
+                                    <a href="#">
+                                        <img class="w-100" src="../../assets/img/fashion3/shop-banner-18.jpg" title="" alt="">
+                                    </a>
+                                </div>
+                                <div class="position-absolute w-100 bottom-0 start-0 pe-none p-3">
+                                    <div class="w-100 text-center bg-mode-re p-3">
+                                        <h6 class="m-0 text-uppercase">Checkout Our Latest Collection</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End section -->
+            <!-- Product section -->
+            <section class="section">
+                <div class="container">
+                    <div class="row justify-content-center section-heading">
+                        <div class="col-lg-6 text-center">
+                            <h3 class="fw-500 h2 m-0">Browse our Bestsellers</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-hover-arrow position-relative">
+                        <div class="swiper swiper-container" data-swiper-options='{
+                              "slidesPerView": 2,
+                              "spaceBetween": 10,
+                              "loop": true,
+                              "pagination": {
+                                "el": ".swiper-pagination",
+                                "clickable": true
+                                },
+                              "navigation": {
+                                "nextEl": ".swiper-next-02",
+                                "prevEl": ".swiper-prev-02"
+                              },
+                              "autoplay": {
+                                "delay": 3500,
+                                "disableOnInteraction": false
+                              },
+                              "breakpoints": {
+                                "600": {
+                                  "slidesPerView": 3
+                                },
+                                "991": {
+                                  "slidesPerView": 3,
+                                  "spaceBetween": 10
+                                },
+                                "1200": {
+                                  "slidesPerView": 4,
+                                  "spaceBetween": 24
+                                }
+                              }
+                        }'>
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="product-card-3">
+                                        <div class="product-card-image">
+                                            <div class="badge-ribbon">
+                                                <span class="badge bg-danger">Sale</span>
+                                            </div>
+                                            <div class="product-action">
+                                                <a href="#" class="btn btn-dark">
+                                                    <i class="fi-heart"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-dark">
+                                                    <i class="fi-repeat"></i>
+                                                </a>
+                                                <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn btn-dark">
+                                                    <i class="fi-eye"></i>
+                                                </a>
+                                                <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn btn-dark">
+                                                    <i class="fi-shopping-cart"></i>
+                                                </a>
+                                            </div>
+                                            <div class="product-media">
+                                                <a href="#">
+                                                    <img class="img-fluid" src="../../assets/img/fashion3/product-11.jpg" title="" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-info">
+                                            <h6 class="product-title">
+                                                <a href="#">Fine-knit sweater</a>
+                                            </h6>
+                                            <div class="product-price">
+                                                <span class="text-primary">$28.<small>50</small></span>
+                                                <del class="fs-sm text-muted">$38.<small>50</small></del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product-card-3">
+                                        <div class="product-card-image">
+                                            <div class="badge-ribbon">
+                                                <span class="badge bg-danger">Sale</span>
+                                            </div>
+                                            <div class="product-action">
+                                                <a href="#" class="btn btn-dark">
+                                                    <i class="fi-heart"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-dark">
+                                                    <i class="fi-repeat"></i>
+                                                </a>
+                                                <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn btn-dark">
+                                                    <i class="fi-eye"></i>
+                                                </a>
+                                                <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn btn-dark">
+                                                    <i class="fi-shopping-cart"></i>
+                                                </a>
+                                            </div>
+                                            <div class="product-media">
+                                                <a href="#">
+                                                    <img class="img-fluid" src="../../assets/img/fashion3/product-18.jpg" title="" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-info">
+                                            <h6 class="product-title">
+                                                <a href="#">Fine-knit sweater</a>
+                                            </h6>
+                                            <div class="product-price">
+                                                <span class="text-primary">$28.<small>50</small></span>
+                                                <del class="fs-sm text-muted">$38.<small>50</small></del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product-card-3">
+                                        <div class="product-card-image">
+                                            <div class="badge-ribbon">
+                                                <span class="badge bg-danger">Sale</span>
+                                            </div>
+                                            <div class="product-action">
+                                                <a href="#" class="btn btn-dark">
+                                                    <i class="fi-heart"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-dark">
+                                                    <i class="fi-repeat"></i>
+                                                </a>
+                                                <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn btn-dark">
+                                                    <i class="fi-eye"></i>
+                                                </a>
+                                                <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn btn-dark">
+                                                    <i class="fi-shopping-cart"></i>
+                                                </a>
+                                            </div>
+                                            <div class="product-media">
+                                                <a href="#">
+                                                    <img class="img-fluid" src="../../assets/img/fashion3/product-12.jpg" title="" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-info">
+                                            <h6 class="product-title">
+                                                <a href="#">Fine-knit sweater</a>
+                                            </h6>
+                                            <div class="product-price">
+                                                <span class="text-primary">$28.<small>50</small></span>
+                                                <del class="fs-sm text-muted">$38.<small>50</small></del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product-card-3">
+                                        <div class="product-card-image">
+                                            <div class="badge-ribbon">
+                                                <span class="badge bg-danger">Sale</span>
+                                            </div>
+                                            <div class="product-action">
+                                                <a href="#" class="btn btn-dark">
+                                                    <i class="fi-heart"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-dark">
+                                                    <i class="fi-repeat"></i>
+                                                </a>
+                                                <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn btn-dark">
+                                                    <i class="fi-eye"></i>
+                                                </a>
+                                                <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn btn-dark">
+                                                    <i class="fi-shopping-cart"></i>
+                                                </a>
+                                            </div>
+                                            <div class="product-media">
+                                                <a href="#">
+                                                    <img class="img-fluid" src="../../assets/img/fashion3/product-14.jpg" title="" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-info">
+                                            <h6 class="product-title">
+                                                <a href="#">Fine-knit sweater</a>
+                                            </h6>
+                                            <div class="product-price">
+                                                <span class="text-primary">$28.<small>50</small></span>
+                                                <del class="fs-sm text-muted">$38.<small>50</small></del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product-card-3">
+                                        <div class="product-card-image">
+                                            <div class="badge-ribbon">
+                                                <span class="badge bg-danger">Sale</span>
+                                            </div>
+                                            <div class="product-action">
+                                                <a href="#" class="btn btn-dark">
+                                                    <i class="fi-heart"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-dark">
+                                                    <i class="fi-repeat"></i>
+                                                </a>
+                                                <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn btn-dark">
+                                                    <i class="fi-eye"></i>
+                                                </a>
+                                                <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn btn-dark">
+                                                    <i class="fi-shopping-cart"></i>
+                                                </a>
+                                            </div>
+                                            <div class="product-media">
+                                                <a href="#">
+                                                    <img class="img-fluid" src="../../assets/img/fashion3/product-15.jpg" title="" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-info">
+                                            <h6 class="product-title">
+                                                <a href="#">Fine-knit sweater</a>
+                                            </h6>
+                                            <div class="product-price">
+                                                <span class="text-primary">$28.<small>50</small></span>
+                                                <del class="fs-sm text-muted">$38.<small>50</small></del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product-card-3">
+                                        <div class="product-card-image">
+                                            <div class="badge-ribbon">
+                                                <span class="badge bg-danger">Sale</span>
+                                            </div>
+                                            <div class="product-action">
+                                                <a href="#" class="btn btn-dark">
+                                                    <i class="fi-heart"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-dark">
+                                                    <i class="fi-repeat"></i>
+                                                </a>
+                                                <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn btn-dark">
+                                                    <i class="fi-eye"></i>
+                                                </a>
+                                                <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn btn-dark">
+                                                    <i class="fi-shopping-cart"></i>
+                                                </a>
+                                            </div>
+                                            <div class="product-media">
+                                                <a href="#">
+                                                    <img class="img-fluid" src="../../assets/img/fashion3/product-16.jpg" title="" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-info">
+                                            <h6 class="product-title">
+                                                <a href="#">Fine-knit sweater</a>
+                                            </h6>
+                                            <div class="product-price">
+                                                <span class="text-primary">$28.<small>50</small></span>
+                                                <del class="fs-sm text-muted">$38.<small>50</small></del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination mt-4 d-lg-none position-relative"></div>
+                        </div>
+                        <div class="swiper-arrow-style-02 swiper-next swiper-next-02"><i class="bi bi-chevron-right"></i> </div>
+                        <div class="swiper-arrow-style-02 swiper-prev swiper-prev-02"><i class="bi bi-chevron-left"></i></div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Product section -->
+            <!-- Count Down -->
+            <section>
+                <div class="container">
+                    <div class="bg-cover bg-no-repeat" style="background-image: url(../../assets/img/fashion3/bg-banner-3.jpg);">
+                        <div class="row justify-content-end py-10 justify-content-center">
+                            <div class="col-10 col-md-8 col-lg-6 col-xxl-5 py-lg-8">
+                                <div class="p-4 p-xl-6 bg-mode-re text-center">
+                                    <h3 class="h1">Get -50% from <br /> Summer Collection</h3>
+                                    <h6>Hurry up! Limited time offer</h6>
+                                    <div class="count-down count-down-01 justify-content-center py-4" data-countdown="January 01, 2025 15:00:00"></div>
+                                    <div>
+                                        <a class="btn btn-primary" href="#">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Count Down -->
+            <!-- Section -->
+            <section class="section">
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="col-lg-4">
+                            <h5 class="mb-4"><a class="text-reset" href="#">New Arrivals</a></h5>
+                            <div class="product-card-4">
+                                <div class="product-card-image">
+                                    <a href="#">
+                                        <img src="../../assets/img/fashion3/product-11.jpg" title="" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-card-info">
+                                    <h6 class="product-title">
+                                        <a href="#" tabindex="0">Fine-knit sweater</a>
+                                    </h6>
+                                    <div class="product-price">
+                                        <span class="text-primary">$28.<small>50</small></span>
+                                        <del class="fs-sm text-muted">$38.<small>50</small></del>
+                                    </div>
+                                    <div class="produc-card-cart">
+                                        <a class="link-effect" href="#">Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card-4">
+                                <div class="product-card-image">
+                                    <a href="#">
+                                        <img src="../../assets/img/fashion3/product-12.jpg" title="" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-card-info">
+                                    <h6 class="product-title">
+                                        <a href="#" tabindex="0">Fine-knit sweater</a>
+                                    </h6>
+                                    <div class="product-price">
+                                        <span class="text-primary">$28.<small>50</small></span>
+                                        <del class="fs-sm text-muted">$38.<small>50</small></del>
+                                    </div>
+                                    <div class="produc-card-cart">
+                                        <a class="link-effect" href="#">Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card-4">
+                                <div class="product-card-image">
+                                    <a href="#">
+                                        <img src="../../assets/img/fashion3/product-13.jpg" title="" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-card-info">
+                                    <h6 class="product-title">
+                                        <a href="#" tabindex="0">Fine-knit sweater</a>
+                                    </h6>
+                                    <div class="product-price">
+                                        <span class="text-primary">$28.<small>50</small></span>
+                                        <del class="fs-sm text-muted">$38.<small>50</small></del>
+                                    </div>
+                                    <div class="produc-card-cart">
+                                        <a class="link-effect" href="#">Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <h5 class="mb-4"><a class="text-reset" href="#">Upcoming</a></h5>
+                            <div class="product-card-4">
+                                <div class="product-card-image">
+                                    <a href="#">
+                                        <img src="../../assets/img/fashion3/product-14.jpg" title="" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-card-info">
+                                    <h6 class="product-title">
+                                        <a href="#" tabindex="0">Fine-knit sweater</a>
+                                    </h6>
+                                    <div class="product-price">
+                                        <span class="text-primary">$28.<small>50</small></span>
+                                        <del class="fs-sm text-muted">$38.<small>50</small></del>
+                                    </div>
+                                    <div class="produc-card-cart">
+                                        <a class="link-effect" href="#">Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card-4">
+                                <div class="product-card-image">
+                                    <a href="#">
+                                        <img src="../../assets/img/fashion3/product-15.jpg" title="" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-card-info">
+                                    <h6 class="product-title">
+                                        <a href="#" tabindex="0">Fine-knit sweater</a>
+                                    </h6>
+                                    <div class="product-price">
+                                        <span class="text-primary">$28.<small>50</small></span>
+                                        <del class="fs-sm text-muted">$38.<small>50</small></del>
+                                    </div>
+                                    <div class="produc-card-cart">
+                                        <a class="link-effect" href="#">Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card-4">
+                                <div class="product-card-image">
+                                    <a href="#">
+                                        <img src="../../assets/img/fashion3/product-16.jpg" title="" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-card-info">
+                                    <h6 class="product-title">
+                                        <a href="#" tabindex="0">Fine-knit sweater</a>
+                                    </h6>
+                                    <div class="product-price">
+                                        <span class="text-primary">$28.<small>50</small></span>
+                                        <del class="fs-sm text-muted">$38.<small>50</small></del>
+                                    </div>
+                                    <div class="produc-card-cart">
+                                        <a class="link-effect" href="#">Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <h5 class="mb-4"><a class="text-reset" href="#">Best Seller</a></h5>
+                            <div class="product-card-4">
+                                <div class="product-card-image">
+                                    <a href="#">
+                                        <img src="../../assets/img/fashion3/product-17.jpg" title="" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-card-info">
+                                    <h6 class="product-title">
+                                        <a href="#" tabindex="0">Fine-knit sweater</a>
+                                    </h6>
+                                    <div class="product-price">
+                                        <span class="text-primary">$28.<small>50</small></span>
+                                        <del class="fs-sm text-muted">$38.<small>50</small></del>
+                                    </div>
+                                    <div class="produc-card-cart">
+                                        <a class="link-effect" href="#">Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card-4">
+                                <div class="product-card-image">
+                                    <a href="#">
+                                        <img src="../../assets/img/fashion3/product-18.jpg" title="" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-card-info">
+                                    <h6 class="product-title">
+                                        <a href="#" tabindex="0">Fine-knit sweater</a>
+                                    </h6>
+                                    <div class="product-price">
+                                        <span class="text-primary">$28.<small>50</small></span>
+                                        <del class="fs-sm text-muted">$38.<small>50</small></del>
+                                    </div>
+                                    <div class="produc-card-cart">
+                                        <a class="link-effect" href="#">Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card-4">
+                                <div class="product-card-image">
+                                    <a href="#">
+                                        <img src="../../assets/img/fashion3/product-13.jpg" title="" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-card-info">
+                                    <h6 class="product-title">
+                                        <a href="#" tabindex="0">Fine-knit sweater</a>
+                                    </h6>
+                                    <div class="product-price">
+                                        <span class="text-primary">$28.<small>50</small></span>
+                                        <del class="fs-sm text-muted">$38.<small>50</small></del>
+                                    </div>
+                                    <div class="produc-card-cart">
+                                        <a class="link-effect" href="#">Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Section -->
+            <!-- Section -->
+            <section>
+                <div class="container">
+                    <div class="row g-3">
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="d-flex border bg-gray-100 p-3 align-items-center">
+                                <div class="fs-1 text-primary">
+                                    <i class="bi bi-truck"></i>
+                                </div>
+                                <div class="col ps-3">
+                                    <h6 class="mb-1">Free shipping</h6>
+                                    <p class="m-0">Lorem ipsum dolor sit amet</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="d-flex border bg-gray-100 p-3 align-items-center">
+                                <div class="fs-1 text-primary">
+                                    <i class="bi bi-headphones"></i>
+                                </div>
+                                <div class="col ps-3">
+                                    <h6 class="mb-1">Contact us 24/7</h6>
+                                    <p class="m-0">Lorem ipsum dolor sit amet</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="d-flex border bg-gray-100 p-3 align-items-center">
+                                <div class="fs-1 text-primary">
+                                    <i class="bi bi-box-arrow-in-left"></i>
+                                </div>
+                                <div class="col ps-3">
+                                    <h6 class="mb-1">30 Days Return</h6>
+                                    <p class="m-0">Lorem ipsum dolor sit amet</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="d-flex border bg-gray-100 p-3 align-items-center">
+                                <div class="fs-1 text-primary">
+                                    <i class="bi bi-shield-lock"></i>
+                                </div>
+                                <div class="col ps-3">
+                                    <h6 class="mb-1">100% Secure Payment</h6>
+                                    <p class="m-0">Lorem ipsum dolor sit amet</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Section -->
+            <!-- blog -->
+            <section class="section">
+                <div class="container">
+                    <div class="row justify-content-center mb-4">
+                        <div class="col-lg-6 text-center">
+                            <h3 class="h3 m-0 sm-title-01">New Blog Posts</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 my-3">
+                            <div class="hover-scale text-center">
+                                <div class="hover-scale-in position-relative">
+                                    <a href="#">
+                                        <img class="img-fluid" src="../../assets/img/fashion3/blog-2.jpg" title="" alt="">
+                                    </a>
+                                    <div class="position-absolute top-0 start-0 mt-3 ms-3 bg-mode-re d-flex flex-column align-items-center px-3 py-2">
+                                        <span class="h4 m-0">25</span>
+                                        <small>MAR</small>
+                                    </div>
+                                </div>
+                                <div class="px-3 py-4 mx-3 mx-lg-5 bg-mode-re mt-n6 position-relative">
+                                    <h5>
+                                        <a class="text-reset" href="#">Make your Marketing website</a>
+                                    </h5>
+                                    <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 my-3">
+                            <div class="hover-scale text-center">
+                                <div class="hover-scale-in position-relative">
+                                    <a href="#">
+                                        <img class="img-fluid" src="../../assets/img/fashion3/blog-1.jpg" title="" alt="">
+                                    </a>
+                                    <div class="position-absolute top-0 start-0 mt-3 ms-3 bg-mode-re d-flex flex-column align-items-center px-3 py-2">
+                                        <span class="h4 m-0">25</span>
+                                        <small>MAR</small>
+                                    </div>
+                                </div>
+                                <div class="px-3 py-4 mx-3 mx-lg-5 bg-mode-re mt-n6 position-relative">
+                                    <h5>
+                                        <a class="text-reset" href="#">Make your Marketing website</a>
+                                    </h5>
+                                    <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 my-3">
+                            <div class="hover-scale text-center">
+                                <div class="hover-scale-in position-relative">
+                                    <a href="#">
+                                        <img class="img-fluid" src="../../assets/img/fashion3/blog-3.jpg" title="" alt="">
+                                    </a>
+                                    <div class="position-absolute top-0 start-0 mt-3 ms-3 bg-mode-re d-flex flex-column align-items-center px-3 py-2">
+                                        <span class="h4 m-0">25</span>
+                                        <small>MAR</small>
+                                    </div>
+                                </div>
+                                <div class="px-3 py-4 mx-3 mx-lg-5 bg-mode-re mt-n6 position-relative">
+                                    <h5>
+                                        <a class="text-reset" href="#">Make your Marketing website</a>
+                                    </h5>
+                                    <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End blog -->
+        </main>
+        <!-- End Main -->
+        <!-- Footer -->
+        @@include('./footer/_footer-03.html', {
+        "path": ".",
+        "imgPath": "../../assets",
+        })
+        <!-- End Footer -->
+    </div>
+    <!-- 
+    ========================
+       End Wrapper 
+    ========================
+    -->
+    <!-- script start -->
+    @@include('./_scripts.html', {
+    "path": "../../assets",
+    })
+    <!-- End script start -->
+</body>
+
+</html>

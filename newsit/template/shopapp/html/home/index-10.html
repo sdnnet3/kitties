@@ -1,0 +1,964 @@
+<!doctype html>
+<html lang="zxx">
+
+<head>
+    @@include('./_head.html', {
+    "path": "../../assets",
+    "title": "ShopApp - eCommerce Bootstrap 5 Template"
+    })
+</head>
+
+<body>
+    <!-- Skippy & Prload -->
+    @@include('./_skippy.html',{
+    "path": "",
+    })
+    <!-- Edn Skippy & Prload -->
+    <!-- Size Chart  -->
+    @@include('./_all-popups.html', {
+    "path": "..",
+    })
+    <!-- End Size Chart  -->
+    <!-- 
+    ========================
+        Wrapper 
+    ========================
+    -->
+    <div class="wrapper">
+        <!-- heder height -->
+        <div class="header-height-bar"></div>
+        <!-- Header -->
+        @@include('./header/_header-10.html', {
+        "path": "./html",
+        "imgPath": "../../assets",
+        "HeaderClass": "fixed-top header-fluid bg-mode-re header-height",
+        "ContainerClass": "container",
+        })
+        <!-- End Header -->
+        <!-- Main -->
+        <main>
+            <!-- Home Slider -->
+            <div class="swiper swiper-container" data-swiper-options='{
+                  "slidesPerView": 1,
+                  "spaceBetween": 0,
+                  "loop": true,
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "clickable": true
+                  },
+                  "navigation": {
+                    "nextEl": ".swiper-next-01",
+                    "prevEl": ".swiper-prev-01"
+                  }
+                }'>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="bg-no-repeat bg-cover bg-center px-8" style="background-image: url(../../assets/img/goggles/goggles-home-banner-1.jpg);">
+                            <div class="container">
+                                <div class="row min-vh-75 align-items-center py-12 justify-content-lg-end">
+                                    <div class="col-lg-6">
+                                        <h6 class="fw-500 text-primary mb-3 letter-spacing-2 text-white">TRENDING NOW</h6>
+                                        <h1 class="display-4 fw-600 mb-4 text-white">New Trending<br /> Goggles For Women</h1>
+                                        <div class="h4 fw-400 text-white text-opacity-85">Up To 50% Off Best Selling At $151.00</div>
+                                        <div class="pt-3">
+                                            <a class="btn btn-outline-light" href="#">Discover More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="bg-no-repeat bg-cover bg-center px-8" style="background-image: url(../../assets/img/goggles/goggles-home-banner-2.jpg);">
+                            <div class="container">
+                                <div class="row min-vh-75 align-items-center py-12">
+                                    <div class="col-lg-6">
+                                        <h6 class="fw-500 text-primary mb-3 letter-spacing-2 text-white">TRENDING NOW</h6>
+                                        <h1 class="display-4 fw-600 mb-4 text-white">New Trending<br /> Goggles For Women</h1>
+                                        <div class="h4 fw-400 text-white text-opacity-85">Up To 50% Off Best Selling At $151.00</div>
+                                        <div class="pt-3">
+                                            <a class="btn btn-outline-light" href="#">Discover More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-arrow-style-01 swiper-next swiper-next-01"><i class="bi bi-chevron-right"></i> </div>
+                <div class="swiper-arrow-style-01 swiper-prev swiper-prev-01"><i class="bi bi-chevron-left"></i></div>
+                <div class="swiper-pagination swiper-pagination-white"></div>
+            </div>
+            <!-- End Home Slider -->
+            <!-- section -->
+            <section class="section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="hover-scale">
+                                <div class="hover-scale-in">
+                                    <a href="#">
+                                        <img src="../../assets/img/goggles/goggles-banner-2.jpg" title="" alt="">
+                                    </a>
+                                </div>
+                                <div class="pt-4">
+                                    <h6 class="fw-300 letter-spacing-1">Sale Up To 30% Discount</h6>
+                                    <h4 class="mb-4"><a class="link-effect-02 text-reset" href="#">Matt Brown Sunglasses</a></h4>
+                                    <a class="btn btn-outline-primary" href="#">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 pt-5 ps-md-5">
+                            <div class="hover-scale">
+                                <div class="hover-scale-in">
+                                    <a href="#">
+                                        <img src="../../assets/img/goggles/goggles-banner-1.jpg" title="" alt="">
+                                    </a>
+                                </div>
+                                <div class="pt-4">
+                                    <h6 class="fw-300 letter-spacing-1">Sale Up To 30% Discount</h6>
+                                    <h4 class="mb-4"><a class="link-effect-02 text-reset" href="#">Matt Brown Sunglasses</a></h4>
+                                    <a class="btn btn-outline-primary" href="#">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End section -->
+            <!-- Product section -->
+            <section class="section">
+                <div class="container">
+                    <div class="row justify-content-center section-heading">
+                        <div class="col-lg-6 text-center">
+                            <p class="fs-6 m-0">Read Today’s News.</p>
+                            <h3 class="h2 mt-2">Latest Arrivals</h3>
+                        </div>
+                    </div>
+                    <div class="row g-3 g-lg-4">
+                        <!-- Product Box -->
+                        <div class="col-6 col-lg-3">
+                            <div class="product-card-10">
+                                <div class="product-card-image">
+                                    <div class="badge-ribbon">
+                                        <span class="badge bg-danger">Sale</span>
+                                    </div>
+                                    <div class="product-media">
+                                        <a href="#">
+                                            <img class="img-fluid" src="../../assets/img/goggles/goggles-product-1.jpg" title="" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-card-info">
+                                    <div class="rating-star text">
+                                        <i class="bi bi-star-fill active"></i>
+                                        <i class="bi bi-star-fill active"></i>
+                                        <i class="bi bi-star-fill active"></i>
+                                        <i class="bi bi-star-fill active"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                    <h6 class="product-title">
+                                        <a href="#">Full Rim Aviator Eyeglasses</a>
+                                    </h6>
+                                    <div class="product-price">
+                                        <span class="text-primary">$28.<small>50</small></span>
+                                        <del class="fs-sm text-muted">$38.<small>50</small></del>
+                                    </div>
+                                    <div class="product-action">
+                                        <a href="#" class="btn">
+                                            <i class="fi-heart"></i>
+                                        </a>
+                                        <a href="#" class="btn">
+                                            <i class="fi-repeat"></i>
+                                        </a>
+                                        <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn">
+                                            <i class="fi-eye"></i>
+                                        </a>
+                                        <a href="#" class="btn">
+                                            <i class="fi-shopping-cart"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Product Box -->
+                        <!-- Product Box -->
+                        <div class="col-6 col-lg-3">
+                            <div class="product-card-10">
+                                <div class="product-card-image">
+                                    <div class="badge-ribbon">
+                                        <span class="badge bg-danger">Sale</span>
+                                    </div>
+                                    <div class="product-media">
+                                        <a href="#">
+                                            <img class="img-fluid" src="../../assets/img/goggles/goggles-product-2.jpg" title="" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-card-info">
+                                    <div class="rating-star text">
+                                        <i class="bi bi-star-fill active"></i>
+                                        <i class="bi bi-star-fill active"></i>
+                                        <i class="bi bi-star-fill active"></i>
+                                        <i class="bi bi-star-fill active"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                    <h6 class="product-title">
+                                        <a href="#">Full Rim Aviator Eyeglasses</a>
+                                    </h6>
+                                    <div class="product-price">
+                                        <span class="text-primary">$28.<small>50</small></span>
+                                        <del class="fs-sm text-muted">$38.<small>50</small></del>
+                                    </div>
+                                    <div class="product-action">
+                                        <a href="#" class="btn">
+                                            <i class="fi-heart"></i>
+                                        </a>
+                                        <a href="#" class="btn">
+                                            <i class="fi-repeat"></i>
+                                        </a>
+                                        <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn">
+                                            <i class="fi-eye"></i>
+                                        </a>
+                                        <a href="#" class="btn">
+                                            <i class="fi-shopping-cart"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Product Box -->
+                        <!-- Product Box -->
+                        <div class="col-6 col-lg-3">
+                            <div class="product-card-10">
+                                <div class="product-card-image">
+                                    <div class="badge-ribbon">
+                                        <span class="badge bg-danger">Sale</span>
+                                    </div>
+                                    <div class="product-media">
+                                        <a href="#">
+                                            <img class="img-fluid" src="../../assets/img/goggles/goggles-product-3.jpg" title="" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-card-info">
+                                    <div class="rating-star text">
+                                        <i class="bi bi-star-fill active"></i>
+                                        <i class="bi bi-star-fill active"></i>
+                                        <i class="bi bi-star-fill active"></i>
+                                        <i class="bi bi-star-fill active"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                    <h6 class="product-title">
+                                        <a href="#">Full Rim Aviator Eyeglasses</a>
+                                    </h6>
+                                    <div class="product-price">
+                                        <span class="text-primary">$28.<small>50</small></span>
+                                        <del class="fs-sm text-muted">$38.<small>50</small></del>
+                                    </div>
+                                    <div class="product-action">
+                                        <a href="#" class="btn">
+                                            <i class="fi-heart"></i>
+                                        </a>
+                                        <a href="#" class="btn">
+                                            <i class="fi-repeat"></i>
+                                        </a>
+                                        <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn">
+                                            <i class="fi-eye"></i>
+                                        </a>
+                                        <a href="#" class="btn">
+                                            <i class="fi-shopping-cart"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Product Box -->
+                        <!-- Product Box -->
+                        <div class="col-6 col-lg-3">
+                            <div class="product-card-10">
+                                <div class="product-card-image">
+                                    <div class="badge-ribbon">
+                                        <span class="badge bg-danger">Sale</span>
+                                    </div>
+                                    <div class="product-media">
+                                        <a href="#">
+                                            <img class="img-fluid" src="../../assets/img/goggles/goggles-product-4.jpg" title="" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-card-info">
+                                    <div class="rating-star text">
+                                        <i class="bi bi-star-fill active"></i>
+                                        <i class="bi bi-star-fill active"></i>
+                                        <i class="bi bi-star-fill active"></i>
+                                        <i class="bi bi-star-fill active"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                    <h6 class="product-title">
+                                        <a href="#">Full Rim Aviator Eyeglasses</a>
+                                    </h6>
+                                    <div class="product-price">
+                                        <span class="text-primary">$28.<small>50</small></span>
+                                        <del class="fs-sm text-muted">$38.<small>50</small></del>
+                                    </div>
+                                    <div class="product-action">
+                                        <a href="#" class="btn">
+                                            <i class="fi-heart"></i>
+                                        </a>
+                                        <a href="#" class="btn">
+                                            <i class="fi-repeat"></i>
+                                        </a>
+                                        <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn">
+                                            <i class="fi-eye"></i>
+                                        </a>
+                                        <a href="#" class="btn">
+                                            <i class="fi-shopping-cart"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Product Box -->
+                    </div>
+                </div>
+            </section>
+            <!-- End Product section -->
+            <!-- call to action -->
+            <section>
+                <div class="container-fluid">
+                    <div class="row g-3">
+                        <div class="col-lg-4">
+                            <div class="position-relative hover-scale">
+                                <div class="hover-scale-in">
+                                    <img class="w-100" src="../../assets/img/goggles/goggles-banner-4.jpg" title="" alt="">
+                                </div>
+                                <div class="position-absolute m-3 d-flex align-items-end justify-content-end bottom-0 end-0">
+                                    <div class="text-center bg-mode-re px-4 py-3">
+                                        <h6 class="text-uppercase fw-300 text-primary mb-3">NEW IN</h6>
+                                        <h3 class="fw-600 h4">New Arrival</h3>
+                                        <div class="pt-2">
+                                            <a class="btn btn-mode btn-sm" href="#">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="position-relative hover-scale">
+                                <div class="hover-scale-in">
+                                    <img class="w-100" src="../../assets/img/goggles/goggles-banner-5.jpg" title="" alt="">
+                                </div>
+                                <div class="position-absolute m-3 d-flex align-items-end justify-content-end bottom-0 end-0">
+                                    <div class="text-center bg-mode-re px-4 py-3">
+                                        <h6 class="text-uppercase fw-300 text-primary mb-3">NEW IN</h6>
+                                        <h3 class="fw-600 h4">Upcoming</h3>
+                                        <div class="pt-2">
+                                            <a class="btn btn-mode btn-sm" href="#">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="position-relative hover-scale">
+                                <div class="hover-scale-in">
+                                    <img class="w-100" src="../../assets/img/goggles/goggles-banner-4.jpg" title="" alt="">
+                                </div>
+                                <div class="position-absolute m-3 d-flex align-items-end justify-content-end bottom-0 end-0">
+                                    <div class="text-center bg-mode-re px-4 py-3">
+                                        <h6 class="text-uppercase fw-300 text-primary mb-3">NEW IN</h6>
+                                        <h3 class="fw-600 h4">Flat 50% off</h3>
+                                        <div class="pt-2">
+                                            <a class="btn btn-mode btn-sm" href="#">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End call to action -->
+            <!-- Product section -->
+            <section class="section">
+                <div class="container">
+                    <div class="row justify-content-center section-heading">
+                        <div class="col-lg-6 text-center">
+                            <p class="fs-6 m-0">Read Today’s News.</p>
+                            <h3 class="h2 mt-2">Latest Arrivals</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-hover-arrow position-relative">
+                        <div class="swiper swiper-container" data-swiper-options='{
+                              "slidesPerView": 2,
+                              "spaceBetween": 10,
+                              "loop": true,
+                              "pagination": {
+                                "el": ".swiper-pagination",
+                                "clickable": true
+                                },
+                              "navigation": {
+                                "nextEl": ".swiper-next-02",
+                                "prevEl": ".swiper-prev-02"
+                              },
+                              "autoplay": {
+                                "delay": 3500,
+                                "disableOnInteraction": false
+                              },
+                              "breakpoints": {
+                                "600": {
+                                  "slidesPerView": 3
+                                },
+                                "991": {
+                                  "slidesPerView": 3,
+                                  "spaceBetween": 10
+                                },
+                                "1200": {
+                                  "slidesPerView": 4,
+                                  "spaceBetween": 24
+                                }
+                              }
+                        }'>
+                            <div class="swiper-wrapper">
+                                <!-- Product Box -->
+                                <div class="swiper-slide">
+                                    <div class="product-card-10">
+                                        <div class="product-card-image">
+                                            <div class="badge-ribbon">
+                                                <span class="badge bg-danger">Sale</span>
+                                            </div>
+                                            <div class="product-media">
+                                                <a href="#">
+                                                    <img class="img-fluid" src="../../assets/img/goggles/goggles-product-5.jpg" title="" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-info">
+                                            <div class="rating-star text">
+                                                <i class="bi bi-star-fill active"></i>
+                                                <i class="bi bi-star-fill active"></i>
+                                                <i class="bi bi-star-fill active"></i>
+                                                <i class="bi bi-star-fill active"></i>
+                                                <i class="bi bi-star"></i>
+                                            </div>
+                                            <h6 class="product-title">
+                                                <a href="#">Full Rim Aviator Eyeglasses</a>
+                                            </h6>
+                                            <div class="product-price">
+                                                <span class="text-primary">$28.<small>50</small></span>
+                                                <del class="fs-sm text-muted">$38.<small>50</small></del>
+                                            </div>
+                                            <div class="product-action">
+                                                <a href="#" class="btn">
+                                                    <i class="fi-heart"></i>
+                                                </a>
+                                                <a href="#" class="btn">
+                                                    <i class="fi-repeat"></i>
+                                                </a>
+                                                <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn">
+                                                    <i class="fi-eye"></i>
+                                                </a>
+                                                <a href="#" class="btn">
+                                                    <i class="fi-shopping-cart"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Product Box -->
+                                <!-- Product Box -->
+                                <div class="swiper-slide">
+                                    <div class="product-card-10">
+                                        <div class="product-card-image">
+                                            <div class="badge-ribbon">
+                                                <span class="badge bg-danger">Sale</span>
+                                            </div>
+                                            <div class="product-media">
+                                                <a href="#">
+                                                    <img class="img-fluid" src="../../assets/img/goggles/goggles-product-6.jpg" title="" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-info">
+                                            <div class="rating-star text">
+                                                <i class="bi bi-star-fill active"></i>
+                                                <i class="bi bi-star-fill active"></i>
+                                                <i class="bi bi-star-fill active"></i>
+                                                <i class="bi bi-star-fill active"></i>
+                                                <i class="bi bi-star"></i>
+                                            </div>
+                                            <h6 class="product-title">
+                                                <a href="#">Full Rim Aviator Eyeglasses</a>
+                                            </h6>
+                                            <div class="product-price">
+                                                <span class="text-primary">$28.<small>50</small></span>
+                                                <del class="fs-sm text-muted">$38.<small>50</small></del>
+                                            </div>
+                                            <div class="product-action">
+                                                <a href="#" class="btn">
+                                                    <i class="fi-heart"></i>
+                                                </a>
+                                                <a href="#" class="btn">
+                                                    <i class="fi-repeat"></i>
+                                                </a>
+                                                <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn">
+                                                    <i class="fi-eye"></i>
+                                                </a>
+                                                <a href="#" class="btn">
+                                                    <i class="fi-shopping-cart"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Product Box -->
+                                <!-- Product Box -->
+                                <div class="swiper-slide">
+                                    <div class="product-card-10">
+                                        <div class="product-card-image">
+                                            <div class="badge-ribbon">
+                                                <span class="badge bg-danger">Sale</span>
+                                            </div>
+                                            <div class="product-media">
+                                                <a href="#">
+                                                    <img class="img-fluid" src="../../assets/img/goggles/goggles-product-7.jpg" title="" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-info">
+                                            <div class="rating-star text">
+                                                <i class="bi bi-star-fill active"></i>
+                                                <i class="bi bi-star-fill active"></i>
+                                                <i class="bi bi-star-fill active"></i>
+                                                <i class="bi bi-star-fill active"></i>
+                                                <i class="bi bi-star"></i>
+                                            </div>
+                                            <h6 class="product-title">
+                                                <a href="#">Full Rim Aviator Eyeglasses</a>
+                                            </h6>
+                                            <div class="product-price">
+                                                <span class="text-primary">$28.<small>50</small></span>
+                                                <del class="fs-sm text-muted">$38.<small>50</small></del>
+                                            </div>
+                                            <div class="product-action">
+                                                <a href="#" class="btn">
+                                                    <i class="fi-heart"></i>
+                                                </a>
+                                                <a href="#" class="btn">
+                                                    <i class="fi-repeat"></i>
+                                                </a>
+                                                <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn">
+                                                    <i class="fi-eye"></i>
+                                                </a>
+                                                <a href="#" class="btn">
+                                                    <i class="fi-shopping-cart"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Product Box -->
+                                <!-- Product Box -->
+                                <div class="swiper-slide">
+                                    <div class="product-card-10">
+                                        <div class="product-card-image">
+                                            <div class="badge-ribbon">
+                                                <span class="badge bg-danger">Sale</span>
+                                            </div>
+                                            <div class="product-media">
+                                                <a href="#">
+                                                    <img class="img-fluid" src="../../assets/img/goggles/goggles-product-8.jpg" title="" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-info">
+                                            <div class="rating-star text">
+                                                <i class="bi bi-star-fill active"></i>
+                                                <i class="bi bi-star-fill active"></i>
+                                                <i class="bi bi-star-fill active"></i>
+                                                <i class="bi bi-star-fill active"></i>
+                                                <i class="bi bi-star"></i>
+                                            </div>
+                                            <h6 class="product-title">
+                                                <a href="#">Full Rim Aviator Eyeglasses</a>
+                                            </h6>
+                                            <div class="product-price">
+                                                <span class="text-primary">$28.<small>50</small></span>
+                                                <del class="fs-sm text-muted">$38.<small>50</small></del>
+                                            </div>
+                                            <div class="product-action">
+                                                <a href="#" class="btn">
+                                                    <i class="fi-heart"></i>
+                                                </a>
+                                                <a href="#" class="btn">
+                                                    <i class="fi-repeat"></i>
+                                                </a>
+                                                <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn">
+                                                    <i class="fi-eye"></i>
+                                                </a>
+                                                <a href="#" class="btn">
+                                                    <i class="fi-shopping-cart"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Product Box -->
+                                <!-- Product Box -->
+                                <div class="swiper-slide">
+                                    <div class="product-card-10">
+                                        <div class="product-card-image">
+                                            <div class="badge-ribbon">
+                                                <span class="badge bg-danger">Sale</span>
+                                            </div>
+                                            <div class="product-media">
+                                                <a href="#">
+                                                    <img class="img-fluid" src="../../assets/img/goggles/goggles-product-1.jpg" title="" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-info">
+                                            <div class="rating-star text">
+                                                <i class="bi bi-star-fill active"></i>
+                                                <i class="bi bi-star-fill active"></i>
+                                                <i class="bi bi-star-fill active"></i>
+                                                <i class="bi bi-star-fill active"></i>
+                                                <i class="bi bi-star"></i>
+                                            </div>
+                                            <h6 class="product-title">
+                                                <a href="#">Full Rim Aviator Eyeglasses</a>
+                                            </h6>
+                                            <div class="product-price">
+                                                <span class="text-primary">$28.<small>50</small></span>
+                                                <del class="fs-sm text-muted">$38.<small>50</small></del>
+                                            </div>
+                                            <div class="product-action">
+                                                <a href="#" class="btn">
+                                                    <i class="fi-heart"></i>
+                                                </a>
+                                                <a href="#" class="btn">
+                                                    <i class="fi-repeat"></i>
+                                                </a>
+                                                <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn">
+                                                    <i class="fi-eye"></i>
+                                                </a>
+                                                <a href="#" class="btn">
+                                                    <i class="fi-shopping-cart"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Product Box -->
+                            </div>
+                            <div class="swiper-pagination mt-4 d-lg-none position-relative"></div>
+                        </div>
+                        <div class="swiper-arrow-style-02 swiper-next swiper-next-02"><i class="bi bi-chevron-right"></i> </div>
+                        <div class="swiper-arrow-style-02 swiper-prev swiper-prev-02"><i class="bi bi-chevron-left"></i></div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Product section -->
+            <!-- Count Down -->
+            <section class="section bg-cover bg-center bg-no-repeat" style="background-image: url(../../assets/img/goggles/goggles-banner-6.jpg);">
+                <div class="container">
+                    <div class="row py-10 justify-content-between align-items-center">
+                        <div class="col-lg-6 col-xl-5">
+                            <div class="p-4 p-xl-6 bg-mode-re text-center">
+                                <h3 class="h1">Get -50% from <br /> Summer Collection</h3>
+                                <h6>Hurry up! Limited time offer</h6>
+                                <div class="count-down count-down-01 justify-content-center py-4" data-countdown="January 01, 2025 15:00:00"></div>
+                                <div>
+                                    <a class="btn btn-primary" href="#">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Count Down -->
+            <!-- Section -->
+            <section class="section">
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="col-lg-4">
+                            <h5 class="mb-4"><a class="link-dark" href="#">New Arrivals</a></h5>
+                            <div class="product-card-4">
+                                <div class="product-card-image">
+                                    <a href="#">
+                                        <img src="../../assets/img/goggles/goggles-product-7.jpg" title="" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-card-info border-start">
+                                    <h6 class="product-title">
+                                        <a href="#" tabindex="0">Full Rim Aviator Eyeglasses</a>
+                                    </h6>
+                                    <div class="product-price">
+                                        <span class="text-primary">$28.<small>50</small></span>
+                                        <del class="fs-sm text-muted">$38.<small>50</small></del>
+                                    </div>
+                                    <div class="produc-card-cart">
+                                        <a class="link-effect" href="#">Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card-4">
+                                <div class="product-card-image">
+                                    <a href="#">
+                                        <img src="../../assets/img/goggles/goggles-product-7.jpg" title="" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-card-info border-start">
+                                    <h6 class="product-title">
+                                        <a href="#" tabindex="0">Full Rim Aviator Eyeglasses</a>
+                                    </h6>
+                                    <div class="product-price">
+                                        <span class="text-primary">$28.<small>50</small></span>
+                                        <del class="fs-sm text-muted">$38.<small>50</small></del>
+                                    </div>
+                                    <div class="produc-card-cart">
+                                        <a class="link-effect" href="#">Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card-4">
+                                <div class="product-card-image">
+                                    <a href="#">
+                                        <img src="../../assets/img/goggles/goggles-product-6.jpg" title="" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-card-info border-start">
+                                    <h6 class="product-title">
+                                        <a href="#" tabindex="0">Full Rim Aviator Eyeglasses</a>
+                                    </h6>
+                                    <div class="product-price">
+                                        <span class="text-primary">$28.<small>50</small></span>
+                                        <del class="fs-sm text-muted">$38.<small>50</small></del>
+                                    </div>
+                                    <div class="produc-card-cart">
+                                        <a class="link-effect" href="#">Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <h5 class="mb-4"><a class="link-dark" href="#">Upcoming</a></h5>
+                            <div class="product-card-4">
+                                <div class="product-card-image">
+                                    <a href="#">
+                                        <img src="../../assets/img/goggles/goggles-product-5.jpg" title="" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-card-info border-start">
+                                    <h6 class="product-title">
+                                        <a href="#" tabindex="0">Full Rim Aviator Eyeglasses</a>
+                                    </h6>
+                                    <div class="product-price">
+                                        <span class="text-primary">$28.<small>50</small></span>
+                                        <del class="fs-sm text-muted">$38.<small>50</small></del>
+                                    </div>
+                                    <div class="produc-card-cart">
+                                        <a class="link-effect" href="#">Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card-4">
+                                <div class="product-card-image">
+                                    <a href="#">
+                                        <img src="../../assets/img/goggles/goggles-product-4.jpg" title="" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-card-info border-start">
+                                    <h6 class="product-title">
+                                        <a href="#" tabindex="0">Full Rim Aviator Eyeglasses</a>
+                                    </h6>
+                                    <div class="product-price">
+                                        <span class="text-primary">$28.<small>50</small></span>
+                                        <del class="fs-sm text-muted">$38.<small>50</small></del>
+                                    </div>
+                                    <div class="produc-card-cart">
+                                        <a class="link-effect" href="#">Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card-4">
+                                <div class="product-card-image">
+                                    <a href="#">
+                                        <img src="../../assets/img/goggles/goggles-product-3.jpg" title="" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-card-info border-start">
+                                    <h6 class="product-title">
+                                        <a href="#" tabindex="0">Full Rim Aviator Eyeglasses</a>
+                                    </h6>
+                                    <div class="product-price">
+                                        <span class="text-primary">$28.<small>50</small></span>
+                                        <del class="fs-sm text-muted">$38.<small>50</small></del>
+                                    </div>
+                                    <div class="produc-card-cart">
+                                        <a class="link-effect" href="#">Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <h5 class="mb-4"><a class="link-dark" href="#">Best Seller</a></h5>
+                            <div class="product-card-4">
+                                <div class="product-card-image">
+                                    <a href="#">
+                                        <img src="../../assets/img/goggles/goggles-product-3.jpg" title="" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-card-info border-start">
+                                    <h6 class="product-title">
+                                        <a href="#" tabindex="0">Full Rim Aviator Eyeglasses</a>
+                                    </h6>
+                                    <div class="product-price">
+                                        <span class="text-primary">$28.<small>50</small></span>
+                                        <del class="fs-sm text-muted">$38.<small>50</small></del>
+                                    </div>
+                                    <div class="produc-card-cart">
+                                        <a class="link-effect" href="#">Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card-4">
+                                <div class="product-card-image">
+                                    <a href="#">
+                                        <img src="../../assets/img/goggles/goggles-product-1.jpg" title="" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-card-info border-start">
+                                    <h6 class="product-title">
+                                        <a href="#" tabindex="0">Full Rim Aviator Eyeglasses</a>
+                                    </h6>
+                                    <div class="product-price">
+                                        <span class="text-primary">$28.<small>50</small></span>
+                                        <del class="fs-sm text-muted">$38.<small>50</small></del>
+                                    </div>
+                                    <div class="produc-card-cart">
+                                        <a class="link-effect" href="#">Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card-4">
+                                <div class="product-card-image">
+                                    <a href="#">
+                                        <img src="../../assets/img/goggles/goggles-product-3.jpg" title="" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-card-info border-start">
+                                    <h6 class="product-title">
+                                        <a href="#" tabindex="0">Full Rim Aviator Eyeglasses</a>
+                                    </h6>
+                                    <div class="product-price">
+                                        <span class="text-primary">$28.<small>50</small></span>
+                                        <del class="fs-sm text-muted">$38.<small>50</small></del>
+                                    </div>
+                                    <div class="produc-card-cart">
+                                        <a class="link-effect" href="#">Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Section -->
+            <!-- blog -->
+            <section class="section bg-gray-100">
+                <div class="container">
+                    <div class="row justify-content-center mb-4">
+                        <div class="col-lg-6 text-center">
+                            <h3 class="h2 mb-2">New Blog Posts</h3>
+                            <p class="fs-6 m-0">Read Today’s News.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 my-3">
+                            <div class="hover-scale border">
+                                <div class="hover-scale-in position-relative">
+                                    <a href="#">
+                                        <img class="img-fluid" src="../../assets/img/goggles/goggles-blog-1.jpg" title="" alt="">
+                                    </a>
+                                    <div class="position-absolute top-0 start-0 mt-3 ms-3 bg-mode-re d-flex flex-column align-items-center px-3 py-2">
+                                        <span class="h4 m-0">25</span>
+                                        <small>MAR</small>
+                                    </div>
+                                </div>
+                                <div class="p-3">
+                                    <h5>
+                                        <a class="text-reset" href="#">Make your Marketing website</a>
+                                    </h5>
+                                    <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                                    <a class="link-effect" href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 my-3">
+                            <div class="hover-scale border">
+                                <div class="hover-scale-in position-relative">
+                                    <a href="#">
+                                        <img class="img-fluid" src="../../assets/img/goggles/goggles-blog-2.jpg" title="" alt="">
+                                    </a>
+                                    <div class="position-absolute top-0 start-0 mt-3 ms-3 bg-mode-re d-flex flex-column align-items-center px-3 py-2">
+                                        <span class="h4 m-0">25</span>
+                                        <small>MAR</small>
+                                    </div>
+                                </div>
+                                <div class="p-3">
+                                    <h5>
+                                        <a class="text-reset" href="#">Make your Marketing website</a>
+                                    </h5>
+                                    <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                                    <a class="link-effect" href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 my-3">
+                            <div class="hover-scale border">
+                                <div class="hover-scale-in position-relative">
+                                    <a href="#">
+                                        <img class="img-fluid" src="../../assets/img/goggles/goggles-blog-3.jpg" title="" alt="">
+                                    </a>
+                                    <div class="position-absolute top-0 start-0 mt-3 ms-3 bg-mode-re d-flex flex-column align-items-center px-3 py-2">
+                                        <span class="h4 m-0">25</span>
+                                        <small>MAR</small>
+                                    </div>
+                                </div>
+                                <div class="p-3">
+                                    <h5>
+                                        <a class="text-reset" href="#">Make your Marketing website</a>
+                                    </h5>
+                                    <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                                    <a class="link-effect" href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End blog -->
+        </main>
+        <!-- End Main -->
+        <!-- Footer -->
+        @@include('./footer/_footer-05.html', {
+        "path": ".",
+        "imgPath": "../../assets",
+        })
+        <!-- End Footer -->
+    </div>
+    <!-- 
+    ========================
+       End Wrapper 
+    ========================
+    -->
+    <!-- script start -->
+    @@include('./_scripts.html', {
+    "path": "../../assets",
+    })
+    <!-- End script start -->
+</body>
+
+</html>
