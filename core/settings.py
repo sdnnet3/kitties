@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-b&#%hzm-od=3piixxx7emc(-kb4-o5z!$c1^g$4zbu!58m=$x=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [*]
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,6 +37,19 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # django apps
+    'custom_user',
+    'cart',
+    'orders',
+    'products',
+    'payments',
+    'promotions',
+    'reviews',
+    'search',
+    'shipping',      
+    # third-party apps
+    'crispy_forms',
+    'crispy_bootstrap5',
 ]
 
 MIDDLEWARE = [
@@ -123,7 +136,7 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Custom User Model
-AUTH_USER_MODEL = 'custom_user.User'
+AUTH_USER_MODEL = "custom_user.User"
 LOGIN_REDIRECT_URL = '/'
 
 STATIC_ROOT = BASE_DIR / "static"
