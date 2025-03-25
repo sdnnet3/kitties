@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx">
+ <head>
+  <!-- metas -->
+  <meta charset="utf-8"/>
+  <meta content="pxdraft" name="author"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width,initial-scale=1,shrink-to-fit=no" name="viewport"/>
+  <meta content="ShopApp - eCommerce Bootstrap 5 Template" name="keywords"/>
+  <meta content="ShopApp - eCommerce Bootstrap 5 Template" name="description"/>
+  <!-- title -->
+  <title>
+   {% block title %}ShopApp - eCommerce Bootstrap 5 Template{% endblock %}
+  </title>
+  <!-- Favicon -->
+  <link href="{% static 'assets/img/favicon.ico' %}" rel="shortcut icon"/>
+  <!-- CSS Template -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet"/>
+ </head>
+ <body>
+  <!-- Skippy & Preload -->
+  <!-- skippy -->
+  <a class="skippy visually-hidden-focusable overflow-hidden" href="#content" id="skippy">
+   <div class="container">
+    <span class="u-skiplink-text">
+     Skip to main content
+    </span>
+   </div>
+  </a>
+  <!-- End skippy -->
+  <!-- Preload -->
+  <div class="loading-preloader" id="loading">
+   <div class="spinner-border text-primary" role="status">
+    <span class="visually-hidden">
+     Loading...
+    </span>
+   </div>
+  </div>
+  <!-- End Preload -->
+  <!-- End Skippy & Preload -->
+  <!-- Header -->
+  {% include 'partials/header/_header-01.html' %}
+  <!-- End Header -->
+  <!-- Main Content -->
+  <main id="content">
+   {% block content %}
+        {% endblock %}
+  </main>
+  <!-- End Main Content -->
+  <!-- Footer -->
+  {% include 'partials/footer/_footer-01.html' %}
+  <!-- End Footer -->
+  <!-- script start -->
+  <!-- jquery -->
+  <script src="{% static 'assets/js/jquery-3.5.1.min.js' %}">
+  </script>
+  <!-- bootstrap -->
+  <script src="{% static 'assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js' %}">
+  </script>
+  <!-- swiper carousel -->
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}">
+  </script>
+  <!-- magnific -->
+  <script src="{% static 'assets/vendor/magnific/jquery.magnific-popup.min.js' %}">
+  </script>
+  <!-- isotope -->
+  <script src="{% static 'assets/vendor/isotope/isotope.pkgd.min.js' %}">
+  </script>
+  <!-- count-down -->
+  <script src="{% static 'assets/vendor/count-down/jquery.countdown.min.js' %}">
+  </script>
+  <!-- count-down -->
+  <script src="{% static 'assets/vendor/jarallax/jarallax-all.js' %}">
+  </script>
+  <!-- Theme Js -->
+  <script src="{% static 'assets/js/custom.js' %}">
+  </script>
+  <script src="{% static 'assets/js/theme.js' %}">
+  </script>
+  <script src="{% static 'assets/js/color-modes.js' %}">
+  </script>
+  <!-- End script start -->
+ </body>
+</html>
